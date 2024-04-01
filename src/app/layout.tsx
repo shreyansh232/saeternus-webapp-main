@@ -8,27 +8,27 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Saeternus',
-	description: 'Innovating for your success',
+  title: 'Saeternus',
+  description: 'Innovating for your success',
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang='en'>
-			<body
-				className={cn(
-					'min-h-screen font-sans antialiased grainy',
-					inter.className
-				)}
-			>
-				<Navbar />
-				{children}
-				<Footer />
-			</body>
-		</html>
-	);
+  return (
+    <html lang='en'>
+      <body
+        className={cn(
+          'grainy min-h-screen font-sans antialiased',
+          inter.className
+        )}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
