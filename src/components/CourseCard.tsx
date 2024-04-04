@@ -41,7 +41,7 @@ const CourseCard: React.FC<CourseInfo> = ({
       {/* Below CardContent might be usefull in future. */}
       {/* <CardContent></CardContent> */}
       <CardFooter className='flex flex-col justify-between gap-2'>
-        <div className='flex w-full flex-wrap justify-start gap-2'>
+        <div className='flex w-full justify-start gap-2'>
           {tags?.map((tag) => (
             <Badge key={tag} variant='secondary' className='text-xs'>
               {tag}
