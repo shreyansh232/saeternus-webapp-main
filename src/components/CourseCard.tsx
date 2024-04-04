@@ -3,7 +3,7 @@ import * as React from 'react';
 import { buttonVariants } from '@/components/ui/button';
 import {
   Card,
-  CardContent,
+  // CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -12,18 +12,9 @@ import {
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import { CourseInfo } from '@/api/course/course.types';
 
-interface CourseCardProps {
-  courseId: string;
-  title: string;
-  description: string;
-  image?: string;
-  tags?: string[];
-  prevPrice?: number;
-  currentPrice: number;
-}
-
-const CourseCard: React.FC<CourseCardProps> = ({
+const CourseCard: React.FC<CourseInfo> = ({
   courseId,
   title,
   description,
