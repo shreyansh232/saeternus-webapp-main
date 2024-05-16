@@ -2,6 +2,12 @@ import React from 'react';
 import CourseCard from '@/components/CourseCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { getAllCourses } from '@/api/course/course';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Courses',
+  description: 'Innovating for your success',
+};
 
 export default function Course() {
   const courses = getAllCourses();

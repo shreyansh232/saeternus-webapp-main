@@ -7,8 +7,21 @@ import { satoshi } from '@/utils/customfonts';
 import { GoogleTagManager } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
-  title: 'Saeternus',
+  metadataBase: new URL('https://saeternus.com'),
+  title: {
+    default: 'Saeternus',
+    template: '%s - Saeternus',
+  },
   description: 'Innovating for your success',
+  openGraph: {
+    title: 'Saeternus',
+    description: 'Innovating for your success',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://saeternus.com', //It should be stored in a .env file.
+    siteName: 'Saeternus',
+    images: [{ url: 'https://saeternus.com/android-chrome-192x192.png' }],
+  },
 };
 
 export default function RootLayout({
