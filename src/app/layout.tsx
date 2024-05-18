@@ -6,8 +6,10 @@ import Footer from '@/components/Footer';
 import { satoshi } from '@/utils/customfonts';
 import { GoogleTagManager } from '@next/third-parties/google';
 
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://saeternus.com'),
+  metadataBase: new URL(`${baseURL}`),
   title: {
     default: 'Saeternus',
     template: '%s - Saeternus',
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
     description: 'Innovating for your success',
     type: 'website',
     locale: 'en_US',
-    url: 'https://saeternus.com', //It should be stored in a .env file.
+    url: `${baseURL}`,
     siteName: 'Saeternus',
     images: [{ url: 'https://saeternus.com/android-chrome-192x192.png' }],
   },
