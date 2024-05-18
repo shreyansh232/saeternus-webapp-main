@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+
 import { satoshi } from '@/utils/customfonts';
 import { GoogleTagManager } from '@next/third-parties/google';
 
