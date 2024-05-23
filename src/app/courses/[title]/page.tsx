@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
-import { getCourseDetailById } from '@/api/course/course';
+import { getCourseByTitle } from '@/api/course/course';
 import { CourseDetails } from '@/api/course/course.types';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import { slugify } from '@/lib/utils';
 import {
   Accordion,
   AccordionContent,
@@ -18,9 +19,9 @@ const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 export async function generateMetadata({
   params,
 }: {
-  params: { courseId: string };
+  params: { title: string };
 }): Promise<Metadata> {
-  const course = await getCourseDetailById(params.courseId);
+  const course = await getCourseByTitle(params.title);
 
   if (!course) {
     return {
@@ -35,7 +36,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${course.title} - Saeternus`,
       description: course.description,
-      url: `${baseURL}/courses/${params.courseId}`,
+      url: `${baseURL}/courses/${slugify(course.title)}`,
       images: [
         {
           url: course.image || `${baseURL}/android-chrome-192x192.png`,
@@ -45,13 +46,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { courseId: string };
-}) {
-  const course: CourseDetails | undefined = await getCourseDetailById(
-    params.courseId
+export default async function Page({ params }: { params: { title: string } }) {
+  const course: CourseDetails | undefined = await getCourseByTitle(
+    params.title
   );
 
   return (

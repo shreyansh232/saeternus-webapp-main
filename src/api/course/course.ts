@@ -3,6 +3,7 @@
  */
 
 import { CourseDetails, CourseInfo } from './course.types';
+import { slugify } from '@/lib/utils';
 
 const courses: CourseInfo[] = [
   {
@@ -299,5 +300,12 @@ export function getCourseInfoById(id: string) {
 
 export function getCourseDetailById(id: string): CourseDetails | undefined {
   const course = detailedCourses.find((course) => course.courseId === id);
+  return course;
+}
+
+export function getCourseByTitle(title: string): CourseDetails | undefined {
+  const course = detailedCourses.find(
+    (course) => slugify(course.title) === slugify(title)
+  );
   return course;
 }
