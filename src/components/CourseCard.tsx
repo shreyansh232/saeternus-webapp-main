@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { slugify } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import {
   Card,
@@ -58,7 +58,7 @@ const CourseCard: React.FC<CourseInfo> = ({
               size: 'lg',
               className: 'mt-5',
             })}
-            href={`/courses/${courseId}`}
+            href={`/courses/${slugify(title)}`}
           >
             View course
           </Link>
