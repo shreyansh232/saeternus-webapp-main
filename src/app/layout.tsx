@@ -4,8 +4,10 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { satoshi } from '@/utils/customfonts';
 
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
+
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata: Metadata = {
@@ -35,8 +37,8 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={cn(
-          'grainy min-h-screen font-sans antialiased',
-          inter.className
+          'min-h-screen antialiased',
+          `${satoshi.variable} font-satoshi`
         )}
       >
         <Navbar />

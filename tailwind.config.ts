@@ -14,6 +14,9 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    fontFamily: {
+      satoshi: ['var(--font-satoshi)'],
+    },
     container: {
       center: true,
       padding: '2rem',

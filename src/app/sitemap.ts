@@ -7,7 +7,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const allCourses = await getAllCourses();
   const courses = allCourses.map((course) => {
     return {
-      url: `${baseURL}/courses/${course.courseId}`,
+      url: `${baseURL}/courses/${course.title}`,
       lastModified: new Date(),
       priority: 0.9,
     };
