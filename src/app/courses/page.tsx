@@ -3,6 +3,7 @@ import CourseCard from '@/components/CourseCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { getAllCourses } from '@/api/course/course';
 import { Metadata } from 'next';
+import { getSeoKeywords } from '@/api/keywords/keywords';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -13,6 +14,17 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Course() {
   const courses = getAllCourses();
+  const allKeywords = getSeoKeywords();
+  const courseKeywords = allKeywords['mainCourse'];
+  const formatKeywords = (keywords: string[]) => {
+    const formattedKeywords = keywords.map((keyword: string) => keyword.trim());
+    return (
+      formattedKeywords.slice(0, -1).join(', ') +
+      ', ' +
+      formattedKeywords[formattedKeywords.length - 1]
+    );
+  };
+  const keywords = formatKeywords(courseKeywords);
 
   return (
     <div>
@@ -34,6 +46,12 @@ export default function Course() {
               currentPrice={course.currentPrice}
             />
           ))}
+        </div>
+        <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
+          <h1 className='text-xs font-bold '>Keywords</h1>
+          <div className='flex items-center justify-start break-normal text-xs text-gray-600'>
+            {keywords}.
+          </div>
         </div>
       </MaxWidthWrapper>
     </div>
