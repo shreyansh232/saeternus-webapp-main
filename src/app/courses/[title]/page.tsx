@@ -13,6 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { getSeoKeywords } from '@/api/keywords/keywords';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -50,6 +51,17 @@ export default async function Page({ params }: { params: { title: string } }) {
   const course: CourseDetails | undefined = await getCourseByTitle(
     params.title
   );
+  const allKeywords = getSeoKeywords();
+  const courseKeywords = allKeywords['course'];
+  const formatKeywords = (keywords: string[]) => {
+    const formattedKeywords = keywords.map((keyword: string) => keyword.trim());
+    return (
+      formattedKeywords.slice(0, -1).join(', ') +
+      ', ' +
+      formattedKeywords[formattedKeywords.length - 1]
+    );
+  };
+  const keywords = formatKeywords(courseKeywords);
 
   return (
     <MaxWidthWrapper className='mt-12 flex flex-col items-center justify-center'>
@@ -145,6 +157,12 @@ export default async function Page({ params }: { params: { title: string } }) {
       ) : (
         <p>Course not found</p>
       )}
+      <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
+        <h1 className='text-xs font-bold '>Keywords</h1>
+        <div className='flex items-center justify-start break-normal text-xs text-gray-600'>
+          {keywords}.
+        </div>
+      </div>
     </MaxWidthWrapper>
   );
 }
