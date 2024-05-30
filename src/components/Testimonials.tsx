@@ -17,14 +17,14 @@ export function Testimonials() {
 
 const testimonials = [
   {
-    image: 'C:/Users/disch/Desktop/Bootcamps/Saeturnus/web-page-saeternus/saeternus-webapp-violetcv/public/images/person_placeholder.png',
+    image: '/images/images.png',
     quote:
       "Thanks for the help with my project proposal! Couldn't have done it without you. I'm so happy with the results!",
     name: 'John Sebastian',
     title: 'Student',
   },
   {
-    image: 'C:/Users/disch/Desktop/Bootcamps/Saeturnus/web-page-saeternus/saeternus-webapp-violetcv/public/images/person_placeholder.png',
+    image: '/images/images.png',
     quote: 'I was struggling with Java and APIs! Well not anymore :).',
     name: 'Maria Garcia',
     title: 'OSS contributor',

@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const InfiniteMovingCards = ({
   items,
@@ -13,7 +13,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    // image: string;
+    image: string; 
     quote: string;
     name: string;
     title: string;
@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
         
         {items.map((item, idx) => (
           <li
-            className="w-[200px] max-w-full relative rounded-m border border-b-0 flex-shrink-0 border-gray-950 px-8 py-6 md:w-[250px] relative"
+            className="w-[200px] max-w-full relative rounded-xl border flex-shrink-0 border-gray-950 px-8 py-6 md:w-[250px] relative shadow-lg"
             style={{
               background:
                 "linear-gradient(180deg, var(--gray-50), var(--gray-50)",
@@ -99,28 +99,31 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote className="mb-12">
-            <FontAwesomeIcon icon={faQuoteLeft} className="text-gray-500 mb-4" />
+            <FontAwesomeIcon icon={faQuoteLeft} className="text-black mb-4" />
 
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-              <span className="relative z-20 text-sm leading-[1.6] text-zinc-950 font-normal">
+              
+              <span className="relative z-20 text-sm leading-[1.6] text-black font-normal">
                 {item.quote}
               </span>
 
-              {/* <FontAwesomeIcon icon={faQuoteRight} className="text-gray-500 ml-4 mt-4" /> */}
-
-              <div className="absolute bottom-0 mb-4 flex flex-col gap-1">
-                {/* {item.image} */}
-                  <span className=" text-sm leading-[1.6] text-zinc-950 font-normal">
+              <div className="absolute bottom-0 mb-4 flex items-center gap-2">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-10 h-10 rounded-full"
+                />
+                <div className="flex flex-col">
+                  <span className="text-sm leading-[1.6] text-purple-950 font-normal">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-zinc-950 font-normal">
+                  <span className="text-sm leading-[1.6] text-purple-950 font-normal">
                     {item.title}
                   </span>
-                
+                </div>
               </div>
             </blockquote>
           </li>

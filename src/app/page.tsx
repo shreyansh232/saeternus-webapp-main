@@ -3,12 +3,12 @@ import { ArrowRight } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
-import { Services } from '@/components/Service';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-      <MaxWidthWrapper className='mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
+      <MaxWidthWrapper className='mb-28 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>
           Innovating for your
           <span className='text-primary'> success</span>
@@ -35,9 +35,37 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
 
+      <div className='flex items-center bg-gray-100 p-40'>
+        <div>
+          <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
+          <p className='mt-2 text-lg'>
+            Get unlimited access to stuctured videos and learning resources.
+          </p>
+          <Link
+            className={buttonVariants({
+              size: 'lg',
+              className: 'mt-5',
+            })}
+            href='/courses'
+          >
+            Get started
+            <ArrowRight className='ml-2 h-5 w-5' />
+          </Link>
+        </div>
+        <div className='clients'>
+          <Image
+            src='/images/placeholder.png' // Replace with your image path
+            alt='clients'
+            width={800}
+            height={800}
+            quality={100}
+          />
+        </div>
+      </div>
+
       {/* Feature section */}
       {/* replace this */}
-      <div className='mx-auto flex max-w-5xl flex-col items-center justify-center sm:mt-56'>
+      {/* <div className='mx-auto flex max-w-5xl flex-col items-center justify-center sm:mt-56'>
         <div className='mb-12 px-6 text-center lg:px-8'>
           <h2 className='mt-2 text-4xl font-bold text-gray-900 sm:text-5xl'>
             What do we <span className='text-primary'>do</span>?
@@ -45,7 +73,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Services />
+      <Services /> */}
 
       {/* Testimonials section */}
       {/* Ui changed */}
@@ -64,34 +92,3 @@ export default function Home() {
     </>
   );
 }
-
-
-{/* <div className='p-40 bg-gray-100 flex items-center'>
-        <div>
-        <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
-        <p className='mt-2 text-lg'>Get unlimited access to stuctured videos and learning resources.</p>
-        <Link
-          className={buttonVariants({
-            size: 'lg',
-            className: 'mt-5',
-          })}
-          href='/courses'
-        >
-          Get started
-          <ArrowRight className='ml-2 h-5 w-5' />
-        </Link>
-        </div>
-        <div className='clients'>
-        <Image
-          src='/images/placeholder.png' // Replace with your image path
-          alt='clients'
-          width={800}
-          height={800}
-        //   layout='fill'
-        //   objectFit='cover'
-          quality={100}
-          // priority
-        //   className='absolute inset-0 h-full w-full object-cover'
-        />
-        </div>
-      </div> */}
