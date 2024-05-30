@@ -38,6 +38,34 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
 
+      <div className='flex items-center bg-gray-100 p-40'>
+        <div>
+          <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
+          <p className='mt-2 text-lg'>
+            Get unlimited access to stuctured videos and learning resources.
+          </p>
+          <Link
+            className={buttonVariants({
+              size: 'lg',
+              className: 'mt-5',
+            })}
+            href='/courses'
+          >
+            Get started
+            <ArrowRight className='ml-2 h-5 w-5' />
+          </Link>
+        </div>
+        <div className='clients'>
+          <Image
+            src='/images/placeholder.png' // Replace with your image path
+            alt='clients'
+            width={800}
+            height={800}
+            quality={100}
+          />
+        </div>
+      </div>
+
       <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row xl:p-60 sm:pt-40'>
         <div className='sm:flex-1'>
           <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
@@ -78,34 +106,3 @@ export default function Home() {
     </>
   );
 }
-
-
-{/* <div className='p-40 bg-gray-100 flex items-center'>
-        <div>
-        <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
-        <p className='mt-2 text-lg'>Get unlimited access to stuctured videos and learning resources.</p>
-        <Link
-          className={buttonVariants({
-            size: 'lg',
-            className: 'mt-5',
-          })}
-          href='/courses'
-        >
-          Get started
-          <ArrowRight className='ml-2 h-5 w-5' />
-        </Link>
-        </div>
-        <div className='clients'>
-        <Image
-          src='/images/placeholder.png' // Replace with your image path
-          alt='clients'
-          width={800}
-          height={800}
-        //   layout='fill'
-        //   objectFit='cover'
-          quality={100}
-          // priority
-        //   className='absolute inset-0 h-full w-full object-cover'
-        />
-        </div>
-      </div> */}
