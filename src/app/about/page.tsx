@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Clients from './clients';
+import Clients from '../../components/clients';
 
 export default function About() {
   return (
