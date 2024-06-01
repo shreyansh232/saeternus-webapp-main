@@ -18,7 +18,7 @@ const clients = [
   { name: 'Tamil University', logo: 'images/client13.png' },
   { name: 'Kashmir University', logo: 'images/client14.png' },
   { name: 'Deccan College', logo: 'images/client15.png' },
-  { name: 'Dr. Babasaheb Ambedkar Marathwada University', logo: 'images/client16.png' },
+  { name: 'BAMU India', logo: 'images/client16.png' },
   { name: 'University of Ibadan', logo: 'images/client17.jpg' },
   { name: 'IISER Mohali', logo: 'images/client18.jpg' },
 ];
