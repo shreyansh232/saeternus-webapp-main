@@ -35,21 +35,19 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
       {/* Feature section */}
-      <div className='mx-auto max-w-5xl sm:mt-56'>
-        <div className='mb-12 px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl sm:text-center'>
-            <h2 className='mt-2 text-4xl font-bold text-gray-900 sm:text-5xl'>
-              What do we <span className='text-primary'> do</span>?
-            </h2>
-          </div>
+      <div className='mx-auto flex max-w-5xl flex-col items-center justify-center sm:mt-56'>
+        <div className='mb-12 px-6 text-center lg:px-8'>
+          <h2 className='mt-2 text-4xl font-bold text-gray-900 sm:text-5xl'>
+            What do we <span className='text-primary'>do</span>?
+          </h2>
         </div>
       </div>
 
       <Services />
 
       {/* Testimonials section */}
-      <div className='mx-auto max-w-5xl sm:mt-56'>
-        <div className='mb-12 px-6 lg:px-8'>
+      <div className='mx-auto mt-8 max-w-5xl items-center justify-center sm:mt-56'>
+        <div className='mb-12 px-6 text-center lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
             <h2 className='mt-2 text-4xl font-bold text-gray-900 sm:text-5xl'>
               What are <span className='text-primary'> our clients </span>
