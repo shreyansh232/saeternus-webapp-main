@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
         
         {items.map((item, idx) => (
           <li
-            className="w-[200px] max-w-full relative rounded-xl border flex-shrink-0 border-gray-950 px-8 py-6 md:w-[250px] relative shadow-lg"
+            className="w-[200px] max-w-full relative rounded-xl border flex-shrink-0 border-gray-300 px-8 py-6 md:w-[250px] relative shadow-lg"
             style={{
               background:
                 "linear-gradient(180deg, var(--gray-50), var(--gray-50)",
