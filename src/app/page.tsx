@@ -1,9 +1,11 @@
+'use client';
+
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { ArrowRight } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
-import Image from 'next/image';
+import MetricsCard2 from '@/components/ui/metric-card2';
 
 export default function Home() {
   return (
@@ -35,11 +37,11 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
 
-      <div className='flex items-center bg-gray-100 p-40'>
-        <div>
+      <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row sm:p-40'>
+        <div className='sm:flex-1'>
           <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
           <p className='mt-2 text-lg'>
-            Get unlimited access to stuctured videos and learning resources.
+            Get unlimited access to structured videos and learning resources.
           </p>
           <Link
             className={buttonVariants({
@@ -52,31 +54,12 @@ export default function Home() {
             <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
         </div>
-        <div className='clients'>
-          <Image
-            src='/images/placeholder.png' // Replace with your image path
-            alt='clients'
-            width={800}
-            height={800}
-            quality={100}
-          />
+        <div className='mt-10 w-full sm:mt-0 sm:flex-1'>
+          <MetricsCard2 />
         </div>
       </div>
-
-      {/* Feature section */}
-      {/* replace this */}
-      {/* <div className='mx-auto flex max-w-5xl flex-col items-center justify-center sm:mt-56'>
-        <div className='mb-12 px-6 text-center lg:px-8'>
-          <h2 className='mt-2 text-4xl font-bold text-gray-900 sm:text-5xl'>
-            What do we <span className='text-primary'>do</span>?
-          </h2>
-        </div>
-      </div>
-
-      <Services /> */}
 
       {/* Testimonials section */}
-      {/* Ui changed */}
       <div className='mx-auto mt-8 max-w-5xl items-center justify-center sm:mt-56'>
         <div className='mb-12 px-6 text-center lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
