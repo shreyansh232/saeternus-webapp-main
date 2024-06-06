@@ -7,8 +7,7 @@ export default function About() {
     <div>
       <div className='relative h-screen w-full'>
         <Image
-          src='/images/About-hero-1.jpg'
-          
+          src='/images/class-hero.jpg'
           alt='Hero Image'
           layout='fill'
           objectFit='cover'

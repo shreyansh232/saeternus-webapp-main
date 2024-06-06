@@ -12,7 +12,7 @@ const clients = [
   { name: 'University of Kerala', logo: 'images/client7.png' },
   { name: 'University of Rajasthan', logo: 'images/client8.png' },
   { name: 'Lucknow University', logo: 'images/client9.png' },
-  { name: 'King George\'s Medical University', logo: 'images/client10.jpg' },
+  { name: "King George's Medical University", logo: 'images/client10.jpg' },
   { name: 'North-Eastern Hill University', logo: 'images/client11.jpg' },
   { name: 'Himachal Pradesh University', logo: 'images/client12.svg' },
   { name: 'Tamil University', logo: 'images/client13.png' },
@@ -30,15 +30,19 @@ export default function Clients() {
       <p className='mb-4 text-center text-sm font-normal'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ad?
       </p>
-      <div className='grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
+      <div className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6'>
         {clients.map((client) => (
           <div key={client.name} className='flip-card'>
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={client.logo} alt={client.name} className='h-16 w-auto' />
+            <div className='flip-card-inner'>
+              <div className='flip-card-front'>
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className='h-16 w-auto'
+                />
               </div>
-              <div className="flip-card-back">
-                <div className="tooltip">{client.name}</div>
+              <div className='flip-card-back'>
+                <div className='tooltip'>{client.name}</div>
               </div>
             </div>
           </div>
@@ -63,7 +67,8 @@ export default function Clients() {
           transform: rotateY(180deg);
         }
 
-        .flip-card-front, .flip-card-back {
+        .flip-card-front,
+        .flip-card-back {
           position: relative;
           width: 100%;
           backface-visibility: hidden;
