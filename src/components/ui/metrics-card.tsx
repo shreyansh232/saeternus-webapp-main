@@ -3,17 +3,17 @@
 import React, { useEffect } from 'react';
 
 const metrics = [
-  { name: 'Metric 1', value: 100 },
-  { name: 'Metric 2', value: 200 },
-  { name: 'Metric 3', value: 300 },
-  { name: 'Metric 4', value: 400 },
-  { name: 'Metric 5', value: 500 },
+  { name: 'Metric 1', value: 100, image: '/images/images.png' },
+  { name: 'Metric 2', value: 200, image: '/images/images.png' },
+  { name: 'Metric 3', value: 300, image: '/images/images.png' },
+  { name: 'Metric 4', value: 400, image: '/images/images.png' },
+  { name: 'Metric 5', value: 500, image: '/images/images.png' },
 ];
 
 export default function MetricsCard() {
   useEffect(() => {
     const elements = document.querySelectorAll('.metric-value');
-    elements.forEach((el, index) => {
+    elements.forEach((el) => {
       let start = 0;
       const end = parseInt(el.dataset.value);
       const duration = 2000;
@@ -31,6 +31,28 @@ export default function MetricsCard() {
 
       countUp();
     });
+
+    // Add event listener for hover effect
+    const metricCards = document.querySelectorAll('.metric-card');
+    metricCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.boxShadow = `${x}px ${y}px 20px rgba(128, 0, 128, 0.5)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+      });
+    });
+
+    return () => {
+      metricCards.forEach(card => {
+        card.removeEventListener('mousemove', () => {});
+        card.removeEventListener('mouseleave', () => {});
+      });
+    };
   }, []);
 
   return (
@@ -38,8 +60,11 @@ export default function MetricsCard() {
       <div className='metrics-grid'>
         {metrics.map((metric, index) => (
           <div key={metric.name} className={`metric-card ${index % 2 !== 0 ? 'adjust-down' : ''}`}>
-            <h3 className='metric-name'>{metric.name}</h3>
-            <p className='metric-value' data-value={metric.value}>0</p>
+            <div className='metric-content'>
+              <h3 className='metric-name'>{metric.name}</h3>
+              <p className='metric-value' data-value={metric.value}>0</p>
+            </div>
+            <img src={metric.image} alt={metric.name} className='metric-image' />
           </div>
         ))}
       </div>
@@ -53,16 +78,19 @@ export default function MetricsCard() {
 
         .metric-card {
           background: #f0f0f0;
-          border-radius: 8px;
-          padding: 20px;
-          text-align: center;
+          border-radius: 16px;
+          padding: 40px;
+          text-align: left;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           width: 100%;
+          position: relative;
           transition: box-shadow 0.3s ease;
+          overflow: hidden;
         }
 
-        .metric-card:hover {
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        .metric-content {
+          position: relative;
+          z-index: 1;
         }
 
         .metric-name {
@@ -75,8 +103,18 @@ export default function MetricsCard() {
           font-weight: bold;
         }
 
+        .metric-image {
+          position: absolute;
+          bottom: -10px;
+          right: -10px;
+          width: 40px;
+          height: 40px;
+        //   transform: translate(20%, 20%);
+          border-radius: 50%;
+        }
+
         .adjust-down {
-          transform: translateY(60px);
+          transform: translateY(50px);
         }
       `}</style>
     </div>

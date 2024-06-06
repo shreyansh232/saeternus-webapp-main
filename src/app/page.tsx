@@ -6,6 +6,7 @@ import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
 import MetricsCard2 from '@/components/ui/metric-card2';
+import MetricsCard from '@/components/ui/metrics-card';
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
           </Link>
         </div>
         <div className='mt-10 w-full sm:mt-0 sm:flex-1'>
-          <MetricsCard2 />
+          <MetricsCard />
         </div>
       </div>
 
