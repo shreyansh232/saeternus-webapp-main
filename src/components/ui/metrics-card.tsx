@@ -82,6 +82,9 @@ export default function MetricsCard() {
           padding: 40px;
           text-align: left;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          flex: 1 1 calc(50% - 40px); /* Two columns with space between */
+          max-width: calc(50% - 40px);
+          min-width: 200px; /* Minimum width to prevent too small cards */
           width: 100%;
           position: relative;
           transition: box-shadow 0.3s ease;
@@ -115,6 +118,47 @@ export default function MetricsCard() {
 
         .adjust-down {
           transform: translateY(50px);
+        }
+        @media (max-width: 1024px) {
+          .metric-card {
+            min-width: 200px; 
+          }
+        }
+
+        @media (max-width: 768px) {
+          .metric-card {
+            min-width: 150px; 
+            padding: 30px;
+          }
+
+          .metric-name {
+            font-size: 1rem;
+          }
+
+          .metric-value {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .container {
+            width: 100%; 
+            padding: 0; 
+            margin: 0; 
+          }
+    
+          .metric-card {
+            min-width: 120px; 
+            padding: 20px;
+          }
+
+          .metric-name {
+            font-size: 0.9rem;
+          }
+
+          .metric-value {
+            font-size: 1.2rem;
+          }
         }
       `}</style>
     </div>
