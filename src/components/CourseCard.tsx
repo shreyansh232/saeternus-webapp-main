@@ -17,17 +17,17 @@ import { CourseInfo } from '@/api/course/course.types';
 const CourseCard: React.FC<CourseInfo> = ({
   courseId,
   title,
-  description,
+  header,
   image,
   tags,
   prevPrice,
   currentPrice,
 }) => {
   return (
-    <Card className='flex h-[250px] w-[350px] flex-col justify-between overflow-hidden'>
+    <Card className='flex w-[340px] flex-col justify-between overflow-hidden shadow-md transition-all duration-500 lg:h-[300px] lg:w-[400px] lg:hover:scale-105 lg:hover:border-2 lg:hover:border-primary lg:hover:shadow-lg'>
       <CardHeader className='relative'>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className='font-extrabold'>{title}</CardTitle>
+        <CardHeader className='text-sm'>{header}</CardHeader>
         {image && (
           <Image
             className='absolute -right-1/4 -top-1/4 rounded-lg opacity-40'
@@ -40,7 +40,7 @@ const CourseCard: React.FC<CourseInfo> = ({
       </CardHeader>
       {/* Below CardContent might be usefull in future. */}
       {/* <CardContent></CardContent> */}
-      <CardFooter className='flex flex-col justify-between gap-2'>
+      <CardFooter className='flex flex-col justify-between gap-1'>
         <div className='flex w-full justify-start gap-2'>
           {tags?.map((tag) => (
             <Badge key={tag} variant='secondary' className='text-xs'>
@@ -49,9 +49,9 @@ const CourseCard: React.FC<CourseInfo> = ({
           ))}
         </div>
         <div className='flex w-full items-center justify-between'>
-          <div className='flex'>
-            <span className='text-gray-500 line-through'>${prevPrice}</span>
-            <span className='text-2xl font-bold'>${currentPrice}</span>
+          <div className='flex items-center justify-center'>
+            <span className='text-gray-500 line-through'>{prevPrice}</span>
+            <span className='text-2xl font-bold'>{currentPrice}</span>
           </div>
           <Link
             className={buttonVariants({
