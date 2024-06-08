@@ -14,7 +14,7 @@ export default function About() {
           quality={100}
           className='absolute inset-0 h-full w-full object-cover'
         />
-        <div className='absolute inset-0 bg-black bg-opacity-70 p-10 text-white md:p-40'>
+        <div className='absolute inset-0 bg-black bg-opacity-40 p-10 text-white md:p-40'>
           <h1 className='text-sm font-thin'>ABOUT US</h1>
           <p className='relative text-4xl'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
