@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 const metrics = [
   { name: 'Skills', value: 100, image: '/images/skills.png' },
   { name: 'Participants', value: 200, image: '/images/participants.png' },
-  { name: 'Number of Universities', value: 300, image: '/images/university.png' },
+  { name: 'Universities', value: 300, image: '/images/university.png' },
   { name: 'States', value: 400, image: '/images/state-1.png' },
   { name: 'Hours Taught', value: 500, image: '/images/hours.png' },
 ];
@@ -99,6 +99,7 @@ export default function MetricsCard() {
         }
 
         .metric-value {
+          color: purple;
           font-size: 2rem;
           font-weight: bold;
         }
