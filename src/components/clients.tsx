@@ -26,8 +26,8 @@ const clients = [
 export default function Clients() {
   return (
     <div className='container mx-auto my-8'>
-      <h2 className='text-center text-3xl font-bold'>Select Clients</h2>
-      <p className='mb-4 text-center text-sm font-normal'>
+      <h2 className='mb-4 text-center text-3xl font-bold'>Select Clients</h2>
+      <p className='mb-12 text-center text-sm font-normal'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ad?
       </p>
       <div className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6'>
