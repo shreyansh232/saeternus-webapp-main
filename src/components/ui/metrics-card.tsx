@@ -3,11 +3,11 @@
 import React, { useEffect } from 'react';
 
 const metrics = [
-  { name: 'Metric 1', value: 100, image: '/images/images.png' },
-  { name: 'Metric 2', value: 200, image: '/images/images.png' },
-  { name: 'Metric 3', value: 300, image: '/images/images.png' },
-  { name: 'Metric 4', value: 400, image: '/images/images.png' },
-  { name: 'Metric 5', value: 500, image: '/images/images.png' },
+  { name: 'Skills', value: 100, image: '/images/skills.png' },
+  { name: 'Participants', value: 200, image: '/images/participants.png' },
+  { name: 'Number of Universities', value: 300, image: '/images/university.png' },
+  { name: 'States', value: 400, image: '/images/state-1.png' },
+  { name: 'Hours Taught', value: 500, image: '/images/hours.png' },
 ];
 
 export default function MetricsCard() {
@@ -36,10 +36,7 @@ export default function MetricsCard() {
     const metricCards = document.querySelectorAll('.metric-card');
     metricCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.boxShadow = `${x}px ${y}px 20px rgba(128, 0, 128, 0.5)`;
+        card.style.boxShadow = `0px 0px 20px rgba(128, 0, 128, 0.5)`;
       });
 
       card.addEventListener('mouseleave', () => {
@@ -108,8 +105,8 @@ export default function MetricsCard() {
 
         .metric-image {
           position: absolute;
-          bottom: -10px;
-          right: -10px;
+          bottom: 10px;
+          right: 10px;
           width: 40px;
           height: 40px;
         //   transform: translate(20%, 20%);
