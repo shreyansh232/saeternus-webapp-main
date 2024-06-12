@@ -24,7 +24,7 @@ export default function About() {
       </div>
       <div className='bg-white p-10 md:p-40'>
         <div className='flex flex-col items-center md:flex-row'>
-          <h1 className='text-2xl font-bold md:absolute md:mr-20 md:text-4xl'>
+          <h1 className='mb-4 text-3xl font-bold md:absolute md:mr-20 md:text-4xl'>
             Who we are
           </h1>
           <p className='text-bold md:ml-52'>

@@ -7,20 +7,20 @@ const clients = [
   { name: 'Jawaharlal Nehru University', logo: 'images/client2.png' },
   { name: 'Aligarh Muslim University', logo: 'images/client3.png' },
   { name: 'University of Madras', logo: 'images/client4.png' },
-  { name: 'Osmania University', logo: 'images/client5.jpg' },
+  { name: 'Osmania University', logo: 'images/client5.png' },
   { name: 'Panjab University', logo: 'images/client6.png' },
   { name: 'University of Kerala', logo: 'images/client7.png' },
   { name: 'University of Rajasthan', logo: 'images/client8.png' },
   { name: 'Lucknow University', logo: 'images/client9.png' },
-  { name: "King George's Medical University", logo: 'images/client10.jpg' },
-  { name: 'North-Eastern Hill University', logo: 'images/client11.jpg' },
+  { name: "King George's Medical University", logo: 'images/client10.png' },
+  { name: 'North-Eastern Hill University', logo: 'images/client11.png' },
   { name: 'Himachal Pradesh University', logo: 'images/client12.svg' },
   { name: 'Tamil University', logo: 'images/client13.png' },
   { name: 'Kashmir University', logo: 'images/client14.png' },
   { name: 'Deccan College', logo: 'images/client15.png' },
   { name: 'BAMU India', logo: 'images/client16.png' },
-  { name: 'University of Ibadan', logo: 'images/client17.jpg' },
-  { name: 'IISER Mohali', logo: 'images/client18.jpg' },
+  { name: 'University of Ibadan', logo: 'images/client17.png' },
+  { name: 'IISER Mohali', logo: 'images/client18.png' },
 ];
 
 export default function Clients() {
@@ -97,6 +97,12 @@ export default function Clients() {
           color: #000000;
           text-align: center;
           width: 120px;
+        }
+
+        @media (max-width: 768px) {
+          .flip-card-inner {
+            height: auto;
+          }
         }
       `}</style>
     </div>
