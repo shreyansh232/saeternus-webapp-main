@@ -17,12 +17,14 @@ export function Testimonials() {
 
 const testimonials = [
   {
+    image: '/images/images.png',
     quote:
       "Thanks for the help with my project proposal! Couldn't have done it without you. I'm so happy with the results!",
     name: 'John Sebastian',
     title: 'Student',
   },
   {
+    image: '/images/images.png',
     quote: 'I was struggling with Java and APIs! Well not anymore :).',
     name: 'Maria Garcia',
     title: 'OSS contributor',
