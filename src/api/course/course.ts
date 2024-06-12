@@ -37,7 +37,6 @@ const courses: CourseInfo[] = [
     title: 'Data Structures and Algorithms',
     description: 'Learn essential data structures and algorithms concepts.',
     // image: "dsa.png",
-    // tags: ['Data Structures', 'Algorithms', 'Programming'],
     tags: ['DSA', 'Algorithms', 'Programming'],
     prevPrice: 149,
     currentPrice: 119,

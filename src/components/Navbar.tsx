@@ -13,6 +13,7 @@ export interface Navigation {
 const navigations: Navigation[] = [
   { path: '/courses', name: 'Courses', authNeeded: true },
   { path: '/knowledge', name: 'Knowledge Haven', authNeeded: true },
+  { path: '/about', name: 'About', authNeeded: true },
   { path: '/contact', name: 'Contact', authNeeded: true },
 ];
 
