@@ -58,7 +58,7 @@ const CourseCard: React.FC<CourseInfo> = ({
               size: 'lg',
               className: 'mt-5',
             })}
-            href={`/courses/${slugify(title)}`}
+            href={`/courses/${slugify(header)}`}
           >
             View course
           </Link>

@@ -72,8 +72,8 @@ const courses: CourseInfo[] = [
   },
   {
     courseId: '7',
-    title: 'Remote Sensing & GIS Project',
-    header: 'Research Project in Remote Sensing & GIS',
+    title: 'Remote Sensing and GIS Project',
+    header: 'Research Project in Remote Sensing and GIS',
     // description: 'Comprehensive course covering HTML, CSS, and JavaScript.',
     image: '/assets/report.png',
     tags: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
@@ -824,7 +824,8 @@ const detailedCourses: CourseDetails[] = [
   },
   {
     courseId: '6',
-    title: 'Research Methodology Data Collection and Analysis',
+    title:
+      'Certificate Course in Research Methodology - Data Collection and Analysis',
     description:
       'Join us to master the intricacies of data collection and analysis in research. Explore the qualities of a researcher, delve into sampling techniques, and design effective questionnaires. Get hands-on with data preprocessing, Python-based exploratory data analysis, and visualization. This course is tailored for students eager to enhance their skills in collecting, processing, and analyzing data for impactful research.',
     image: '/assets/cloud-data.png',
@@ -958,7 +959,7 @@ const detailedCourses: CourseDetails[] = [
   },
   {
     courseId: '7',
-    title: 'Research Project in Remote Sensing & GIS',
+    title: 'Research Project in Remote Sensing and GIS',
     description:
       'Join us to work on your very own research project or pick from one of our ideas that aligns with your interests. This will involve working with our experts to apply your Remote Sensing and GIS skills to real world case studies. In the end, you get an opportunity to publish a research paper!',
     image: '/assets/report.png',
