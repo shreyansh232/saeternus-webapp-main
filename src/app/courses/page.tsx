@@ -6,7 +6,7 @@ import { getAllCourses } from '@/api/course/course';
 import { Metadata } from 'next';
 import { getSeoKeywords } from '@/api/keywords/keywords';
 
-export async function generateMetadata(): Promise<Metadata> {
+async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Courses',
     description: 'Courses offered by Saeternus.',
