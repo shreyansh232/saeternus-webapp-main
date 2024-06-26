@@ -19,14 +19,52 @@ const testimonials = [
   {
     image: '/images/images.png',
     quote:
-      "Thanks for the help with my project proposal! Couldn't have done it without you. I'm so happy with the results!",
-    name: 'John Sebastian',
-    title: 'Student',
+      "Attending this program was an awesome experience. I learned a lot from the sessions and speakers. The Saeternus GIS course was amazing, providing immense knowledge of GIS. Really awesome course organized by Saeternus. Highly recommended for future aspirants.",
+    name: 'Roma Siddiqui',
+    title: 'Project Assistant',
   },
   {
     image: '/images/images.png',
-    quote: 'I was struggling with Java and APIs! Well not anymore :).',
-    name: 'Maria Garcia',
-    title: 'OSS contributor',
+    quote:
+      'The instructor was very methodological and patient and made learning SPSS very easy. The structured approach helped in easy learning.',
+    name: 'Dr. Rajesh Raman',
+    title: 'Additional Professor',
+  },
+  {
+    image: '/images/images.png',
+    quote:
+      "The SPSS course was transformative. The instructor simplified complex concepts, ensuring clarity. Clear explanations and practical examples helped me grasp SPSS fundamentals quickly. Emphasis on accurate data interpretation proved invaluable in my current role.",
+    name: 'Sudha Rawat',
+    title: 'Doctoral Candidate',
+  },
+  {
+    image: '/images/images.png',
+    quote:
+      'The classes were very well planned and modified as per the needs of the students. The concepts were well elaborated, and the notebooks were shared in advance to get the idea of the topic to be taught.',
+    name: 'Kavita Verma',
+    title: 'Research Scholar',
+  },
+  {
+    image: '/images/images.png',
+    quote:
+      'The overall experience was really overwhelming. Teachers were very helpful and supportive. The lecture files were shared after each class that played an important role in completing the task and to cope up with the class. The course was indeed very productive. Looking forward to learning more.',
+    name: 'Preeti Mishra',
+    title: 'Assistant Professor',
+  },
+  {
+    image: '/images/images.png',
+    quote:
+      'The instructor was very methodological, and her structured approach for teaching SPSS made learning SPSS very easy - even for beginners. The course was appropriate for both beginners and intermediate-level SPSS users. I highly recommend the course.',
+    name: 'Dr. Rati Prabha',
+    title: 'Associate Professor',
+  },
+  {
+    image: '/images/images.png',
+    quote:
+      'I am impressed by the overall quality of the course and most importantly by the faculty and the knowledge she possesses.',
+    name: 'Prakarsh Srivastava',
+    title: 'Student',
   },
 ];
+
+export default testimonials;
