@@ -38,7 +38,7 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
 
-      <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row md:p-60 sm:pt-40'>
+      <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row xl:p-60 sm:pt-40'>
         <div className='sm:flex-1'>
           <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
           <p className='mt-2 text-lg'>
@@ -55,7 +55,7 @@ export default function Home() {
             <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
         </div>
-        <div className='sm:mt-0 ml-[20]'>
+        <div className='sm:mt-0'>
           <MetricsCard />
         </div>
       </div>

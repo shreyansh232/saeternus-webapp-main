@@ -16,7 +16,7 @@ const MCard: React.FC<MCardProps> = ({ metric }) => {
       <h3 className="text-black text-lg font-semibold whitespace-normal max-w-xs">{metric.name}</h3>
       <p className="text-4xl font-bold text-primary">{metric.value}</p>
       <div className='mt-auto flex justify-end'>
-      <img src={metric.image} alt={metric.name} className="w-14 h-14 object-contain"/>
+        <img src={metric.image} alt={metric.name} className="w-14 h-14 object-contain" />
       </div>
     </div>
   );
