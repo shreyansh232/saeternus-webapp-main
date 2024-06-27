@@ -8,13 +8,13 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "normal",
   pauseOnHover = true,
   className,
 }: {
   items: {
     image: string; 
-    quote: string;
+    quote: any;
     name: string;
     title: string;
   }[];
@@ -89,9 +89,9 @@ export const InfiniteMovingCards = ({
         )}
       >
         
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
-            className="w-[200px] max-w-full relative rounded-xl border flex-shrink-0 border-gray-300 px-8 py-6 md:w-[250px] relative shadow-lg"
+            className="w-[300px] max-w-full rounded-xl border flex-shrink-0 border-gray-300 px-8 py-6 md:w-[300px] relative shadow-lg"
             style={{
               background:
                 "linear-gradient(180deg, var(--gray-50), var(--gray-50)",
@@ -99,7 +99,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote className="mb-12">
-            <FontAwesomeIcon icon={faQuoteLeft} className="text-black mb-4" />
+            <FontAwesomeIcon icon={faQuoteLeft} className="text-primary text-2xl mb-4" />
 
               <div
                 aria-hidden="true"
@@ -116,10 +116,10 @@ export const InfiniteMovingCards = ({
                   className="w-10 h-10 rounded-full"
                 />
                 <div className="flex flex-col">
-                  <span className="text-sm leading-[1.6] text-purple-950 font-normal">
+                  <span className="text-md leading-[1.6] text-primary font-normal">
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6] text-purple-950 font-normal">
+                  <span className="text-xs leading-[1.6] text-gray-700 font-normal">
                     {item.title}
                   </span>
                 </div>

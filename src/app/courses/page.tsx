@@ -94,7 +94,7 @@ export default function Course() {
         </div>
         <div className='mt-20 w-full text-left'>
           <h1 className='mb-2 text-xs font-bold'>Keywords</h1>
-          <div className='flex flex-wrap items-center justify-start break-normal text-xs text-gray-600'>
+          <div className='flex flex-wrap items-center justify-start break-words text-justify text-xs text-gray-600'>
             {keywords}.
           </div>
         </div>

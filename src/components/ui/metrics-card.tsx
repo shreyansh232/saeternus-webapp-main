@@ -1,14 +1,12 @@
-// pages/index.tsx
-
 import React from 'react';
-import MetricsCard from './mcard'; // Adjust import path based on your file structure
+import MetricsCard from './mcard';
 
 const metrics = [
-  { name: 'Programs', value: 8, image: '/images/skills.png' },
-  { name: 'Learners', value: 141, image: '/images/participants.png' },
-  { name: 'Organisations', value: 55, image: '/images/university.png' },
-  { name: 'Country/States', value: 23, image: '/images/state-1.png' },
-  { name: 'Hours Spent', value: 3324, image: '/images/hours.png' },
+  { name: 'Programs', value: '8', image: '/images/skills.png' },
+  { name: 'Learners', value: '140+', image: '/images/participants.png' },
+  { name: 'Organisations', value: '50+', image: '/images/university.png' },
+  { name: 'Country/States', value: '20+', image: '/images/state-1.png' },
+  { name: 'Hours Spent', value: '3.3k+', image: '/images/hours.png' },
 ];
 
 const MetricsSection: React.FC = () => {

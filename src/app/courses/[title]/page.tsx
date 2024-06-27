@@ -3,7 +3,7 @@ import { getCourseByTitle } from '@/api/course/course';
 import { CourseDetails } from '@/api/course/course.types';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Badge } from '@/components/ui/badge';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { slugify } from '@/lib/utils';
@@ -13,7 +13,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { getSeoKeywords } from '@/api/keywords/keywords';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -175,7 +174,7 @@ export default async function Page({ params }: { params: { title: string } }) {
       )}
       <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
         <h1 className='mb-2 text-xs font-bold'>Keywords</h1>
-        <div className='flex flex-wrap items-center justify-start break-normal text-xs text-gray-600'>
+        <div className='flex flex-wrap items-center justify-start break-normal text-justify text-xs text-gray-600'>
           {course?.keywords.map((keyword, index) => (
             <p key={keyword} className='text-xs'>
               {keyword}

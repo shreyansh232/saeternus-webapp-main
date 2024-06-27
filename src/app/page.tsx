@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper className='mb-96 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
-        <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>
+        <h1 className='text-5xl font-bold md:text-6xl xl:w-11/12 xl:text-8xl'>
           Innovating for your
           <span className='text-primary'> success</span>
         </h1>
-        <h2 className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
+        <h2 className='mt-5 max-w-prose text-zinc-700 sm:text-lg xl:text-xl'>
           <span className='text-primary'>Your success is our success</span>. We
           are committed to delivering innovative solutions and exceptional
           service to help you achieve your goals.{' '}
@@ -28,8 +28,8 @@ export default function Home() {
 
         <Link
           className={buttonVariants({
-            size: 'lg',
-            className: 'mt-5',
+            size: 'xl',
+            className: 'mt-5 text-xl',
           })}
           href='/courses'
         >
@@ -40,14 +40,14 @@ export default function Home() {
 
       <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row sm:pt-40 xl:p-60'>
         <div className='sm:flex-1'>
-          <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
+          <h1 className='text-4xl font-bold'>Start Learning with Saeturnus</h1>
           <p className='mt-2 text-lg'>
             Get unlimited access to structured videos and learning resources.
           </p>
           <Link
             className={buttonVariants({
-              size: 'lg',
-              className: 'mt-5',
+              size: 'xl',
+              className: 'mt-5 text-xl',
             })}
             href='/courses'
           >

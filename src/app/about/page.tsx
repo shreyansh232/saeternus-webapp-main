@@ -11,7 +11,7 @@ export default function About() {
           alt='Hero Image'
           layout='fill'
           objectFit='cover'
-          quality={100}
+          quality={10}
           className='absolute inset-0 h-full w-full object-cover'
         />
         <div className='absolute inset-0 bg-black bg-opacity-40 p-10 text-white md:p-40'>
