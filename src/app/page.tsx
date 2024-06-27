@@ -5,13 +5,13 @@ import { ArrowRight } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
-import MetricsCard2 from '@/components/ui/metric-card2';
+
 import MetricsCard from '@/components/ui/metrics-card';
 
 export default function Home() {
   return (
     <>
-      <MaxWidthWrapper className='mb-28 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
+      <MaxWidthWrapper className='mb-56 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>
           Innovating for your
           <span className='text-primary'> success</span>
@@ -38,7 +38,7 @@ export default function Home() {
         </Link>
       </MaxWidthWrapper>
 
-      <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row sm:p-40'>
+      <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row xl:p-60 sm:pt-40'>
         <div className='sm:flex-1'>
           <h1 className='text-3xl font-bold'>Start Learning with Saeturnus</h1>
           <p className='mt-2 text-lg'>
@@ -55,7 +55,7 @@ export default function Home() {
             <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
         </div>
-        <div className='mt-10 w-full sm:mt-0 sm:flex-1'>
+        <div className='sm:mt-0'>
           <MetricsCard />
         </div>
       </div>
