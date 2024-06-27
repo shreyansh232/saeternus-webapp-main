@@ -33,7 +33,7 @@ const ContactPage: FC = () => {
     <div>
       <div className='max-w-8xl mx-auto py-12 md:py-10'>
         <div className='grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2'>
-          <div className='ml-20 hidden flex-col gap-10 lg:block'>
+          <div className='hidden flex-col gap-10 md:ml-20 md:w-[550px] lg:block xl:ml-80 xl:w-full'>
             <div className='mb-20'>
               <h1 className='text-7xl font-extrabold'>Let&apos;s Talk</h1>
               <p className='text-md mt-10 font-normal text-gray-600'>
@@ -80,7 +80,7 @@ const ContactPage: FC = () => {
                 </li>
                 <li className='hover:text-primary'>
                   <a
-                    href='/'
+                    href='facebook.com/saeternus.india'
                     target='_blank'
                     className='flex items-center gap-1'
                   >
@@ -110,7 +110,7 @@ const ContactPage: FC = () => {
           </div>
           {/* contact from */}
           <div className='flex items-center justify-center rounded-lg p-4 lg:h-[626px] lg:border lg:border-black'>
-            <div className='px-2 md:px-12'>
+            <div className='px-2 md:px-1 xl:px-12'>
               <p className='text-2xl font-bold text-gray-900 md:text-4xl'>
                 Contact Us
               </p>

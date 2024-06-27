@@ -10,9 +10,8 @@ const courses: CourseInfo[] = [
     courseId: '1',
     title: 'GIS Certification',
     header: 'Certificate Course in Geographical Information System (GIS)',
-    // description: 'Emerging technologies such as GIS (Geographic Information System) and RS (Remote Sensing) are instrumental in addressing intricate global challenges and impacting various aspects of life. In this context, the role of a Geospatial expert is gaining significance in the decision-making process. Acquiring practical knowledge is essential to comprehensively grasp the underlying concepts and unlock the potential for innovative applications of these technologies across diverse domains.',
     image: '/assets/gis.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['GIS', 'Mapping'],
     prevPrice: '₹7,000',
     currentPrice: '₹3,540',
   },
@@ -21,9 +20,8 @@ const courses: CourseInfo[] = [
     title: 'SPSS Certification',
     header:
       'Certificate Course in Statistical Package for the Social Sciences (SPSS)',
-    // description: 'Master the fundamentals of Node.js for backend development.',
     image: '/assets/spss.png',
-    tags: ['Node.js', 'JavaScript', 'Backend'],
+    tags: ['SPSS', 'Statistics', 'Analysis'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
   },
@@ -31,9 +29,8 @@ const courses: CourseInfo[] = [
     courseId: '3',
     title: 'Python Data Analysis Certification',
     header: 'Certificate Course in Python - Data Analysis and Visualisation',
-    // description: 'Get started with Python programming language.',
     image: '/assets/python.png',
-    tags: ['Python', 'Programming', 'Beginner'],
+    tags: ['Python', 'Analysis', 'Visualization'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
   },
@@ -41,10 +38,8 @@ const courses: CourseInfo[] = [
     courseId: '4',
     title: 'Remote Sensing Certification',
     header: 'Certificate Course in Remote Sensing',
-    // description: 'Learn essential data structures and algorithms concepts.',
     image: '/assets/rm.png',
-    tags: ['Data Structures', 'Algorithms', 'Programming'],
-    // tags: ['DSA', 'Algorithms', 'Programming'],
+    tags: ['Remote Sensing', 'Observation'],
     prevPrice: '₹10,700',
     currentPrice: '₹2,990',
   },
@@ -53,9 +48,8 @@ const courses: CourseInfo[] = [
     title: 'Research Methodology - Research Design and Writing',
     header:
       'Certificate Course in Research Methodology - Research Design and Writing',
-    // description: 'Comprehensive course covering HTML, CSS, and JavaScript.',
     image: '/assets/rdp.png',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
+    tags: ['Research Methodology', 'Writing'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
   },
@@ -64,9 +58,8 @@ const courses: CourseInfo[] = [
     title: 'Research Methodology Data Collection and Analysis',
     header:
       'Certificate Course in Research Methodology - Data Collection and Analysis',
-    // description: 'Comprehensive course covering HTML, CSS, and JavaScript.',
     image: '/assets/cloud-data.png',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
+    tags: ['Research Methodology', 'Analysis'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
   },
@@ -74,9 +67,8 @@ const courses: CourseInfo[] = [
     courseId: '7',
     title: 'Remote Sensing and GIS Project',
     header: 'Research Project in Remote Sensing and GIS',
-    // description: 'Comprehensive course covering HTML, CSS, and JavaScript.',
     image: '/assets/report.png',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
+    tags: ['Remote Sensing', 'Project'],
     prevPrice: '₹9,600',
     currentPrice: '₹2,596',
   },
@@ -90,7 +82,7 @@ const detailedCourses: CourseDetails[] = [
       'Emerging technologies such as GIS (Geographic Information System) and RS (Remote Sensing) are instrumental in addressing intricate global challenges and impacting various aspects of life. In this context, the role of a Geospatial expert is gaining significance in the decision-making process. Acquiring practical knowledge is essential to comprehensively grasp the underlying concepts and unlock the potential for innovative applications of these technologies across diverse domains.',
 
     image: '/assets/gis.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['GIS', 'Geospatial', 'Mapping'],
     prevPrice: '₹7,000',
     currentPrice: '₹3,540',
     whatsapp: 'https://chat.whatsapp.com/FRmZTHwsDLACdxUAQOg3GE',
@@ -240,6 +232,34 @@ const detailedCourses: CourseDetails[] = [
         image: '/assets/community.png',
       },
     ],
+    keywords: [
+      'Geographical Information system',
+      'GIS System',
+      'Projection System',
+      'Geodatabase',
+      'GIS Layers',
+      'Georeferencing',
+      'Projection Transformation',
+      'Digitisation',
+      'Attribute',
+      'ArcGIS',
+      'Clip Management',
+      'Mosaic',
+      'Raster Calculator',
+      'Table Calculation',
+      'Rater & Vector Analysis',
+      'Query Builder',
+      'Change Detection',
+      'Map Preparation',
+      'Q GIS',
+      'Vector Operation',
+      'Raster Operation',
+      'GIS analysis',
+      'Remote Sensing',
+      'Geo spatial technology',
+      'Geoinformatics',
+      'GPS',
+    ],
   },
   {
     courseId: '2',
@@ -248,7 +268,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       'Data analysis is one of the most flourishing fields right now as businesses around the world are trying to make sense of their data. However, there are several data analysis tools available in the market, but SPSS is a suite of software programs that analyses scientific data related to the social sciences. It offers a fast-visual modelling environment that ranges from the smallest to the most complex models. SPSS is designed to accommodate a wide variety of variable data formats, including Excel, CSV, SAS, and Stata data files. The data obtained from SPSS is used for surveys, data mining, market research, etc. SPSS training enables you to master all the essential concepts of SPSS for performing data analysis and statistics through hands-on exposure to industry use cases.',
     image: '/assets/spss.png',
-    tags: ['Node.js', 'JavaScript', 'Backend'],
+    tags: ['SPSS', 'Statistics', 'Analysis'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
     whatsapp: 'https://chat.whatsapp.com/FdbSxmUWe4yJTVNQvV1zZ2',
@@ -256,91 +276,85 @@ const detailedCourses: CourseDetails[] = [
     formLink: 'https://forms.gle/EMas47VcUmrUctK78',
     lessons: [
       {
-        title:
-          'Introductory Statistics: Data types, Measures of Central tendency, SPSS Environment: Data View & Variable View',
+        title: 'Introduction to Statistics & SPSS',
         day: 'Day 1',
-        description: '',
+        description:
+          'Why Study Statistics, Types of Data, Types of Variables, Types of Statistics, SPSS Environment: Data View & Variable View.',
       },
       {
-        title:
-          'Measures of Variability and Shape, Exploratory Data Analysis: Descriptive Statistics',
+        title: 'Descriptive Statistics',
         day: 'Day 2',
-        description: '',
+        description:
+          'Measures of Central Tendency: Mean, Median, Mode; Partitions: Quartile, Decile, Percentile; Dispersion: Range, Mean Deviation, Quartile Deviation, Standard Deviation, Variance, Coefficient of Variation; Shape: Skewness, Kurtosis; Hands-on Practice',
       },
       {
-        title: 'Normality tests with plots',
+        title: 'Inferential Statistics',
         day: 'Day 3',
-        description: '',
+        description:
+          'Hypothesis: Null and Alternative; Errors in Hypothesis Testing; Normality Testing',
       },
       {
-        title: 'Data Management: Preparation, Computation & Transformation',
+        title: 'Parametric test',
         day: 'Day 4',
-        description: '',
+        description:
+          'Statistical tests assuming specific distributional forms in the data.',
       },
       {
-        title:
-          'Bivariate analysis - cross tabulation - chi square, Kappa, correlation',
+        title: 'ANCOVA, MANOVA & MANCOVA',
         day: 'Day 5',
-        description: '',
+        description:
+          'Analysis of covariance, multivariate analysis of variance, and multivariate analysis of covariance.',
       },
       {
-        title:
-          'Graphical Representation of Data: Histogram, Bar plot, Pie chart, Frequency polygon and Bi-variate analysis',
+        title: 'Non-Parametric test',
         day: 'Day 6',
-        description: '',
+        description:
+          'Statistical tests not assuming specific distributional forms.',
       },
       {
         title:
-          'Parametric tests: t-test (one sample, paired sample & two independent sample)',
+          'Qualitative data analysis- Cross tabulation, Chi-square test of association, Kappa statistics.',
         day: 'Day 7',
-        description: '',
+        description:
+          'Techniques include cross-tabulation, Chi-square test of association, and Kappa statistics.',
       },
       {
-        title: 'One-way ANOVA, Post hoc tests, Two-way ANOVA, ANCOVA',
+        title: 'Correlation & Linear Regression',
         day: 'Day 8',
-        description: '',
+        description:
+          'Examines relationships and predictive modeling between variables.',
       },
       {
-        title:
-          'Non-parametric tests: Mann Whitney U test, Wilcoxon sign rank test, one sample run test, Kruskal-Wallis test',
+        title: 'Bivariate logistic regression',
         day: 'Day 9',
-        description: '',
+        description:
+          'Analyzes the relationship between two categorical variables.',
       },
       {
-        title:
-          'Linear Regression (Simple & Multiple) and its diagnostics, Logistic Regression-Binary & Ordinal and its diagnostics',
+        title: 'Ordinal logistic regression',
         day: 'Day 10',
-        description: '',
+        description: 'Predicts ordinal outcomes using categorical predictors.',
+      },
+      {
+        title: 'Cluster Analysis',
+        day: 'Day 11',
+        description: 'Identifies natural groupings in data.',
       },
       {
         title: 'Factor Analysis',
-        day: 'Day 11',
-        description: '',
-      },
-      {
-        title: 'Cluster Analysis-Hierarchical & k-means clustering',
         day: 'Day 12',
-        description: '',
+        description: 'Reduces variables and identifies underlying factors.',
       },
       {
-        title: 'Discriminant Analysis',
-        day: 'Day 15',
-        description: '',
+        title: 'Discriminant function analysis',
+        day: 'Day 13',
+        description: 'Predicts group membership based on predictor variables.',
       },
       {
         title: 'Survival Analysis',
-        day: 'Day 16',
-        description: '',
-      },
-      {
-        title: 'Nearest Neighbour Analysis',
-        day: 'Day 17',
-        description: '',
-      },
-      {
-        title: 'Practice & Case Studies',
-        day: 'Day 18',
-        description: '',
+        day: 'Day 14',
+        description:
+          'Analyzes time-to-event data, typically in medical or social sciences.',
       },
     ],
     startDate: '2024-06-01',
@@ -397,6 +411,24 @@ const detailedCourses: CourseDetails[] = [
         image: '/assets/community.png',
       },
     ],
+    keywords: [
+      'SPSS',
+      'Statistics',
+      'Analysis',
+      'Data',
+      'Regression',
+      'Logistic Regression',
+      'Cluster Analysis',
+      'Factor Analysis',
+      'Survival Analysis',
+      'Descriptive Statistics',
+      'Hypothesis Testing',
+      'ANOVA',
+      'Correlation Analysis',
+      'Time Series Analysis',
+      'Multivariate Analysis',
+      'Data Visualization',
+    ],
   },
   {
     courseId: '3',
@@ -404,7 +436,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       "Unlock the power of Python for data analysis and visualization in this comprehensive course. From mastering fundamental Python concepts to handling datasets and conducting exploratory data analysis, you'll gain the skills to visualize data effectively. Explore a variety of plots, charts, and statistical techniques, and even delve into geospatial data visualization. Elevate your proficiency in Python and transform raw data into meaningful insights. Join us on this engaging journey of learning and acquire the expertise needed for impactful data-driven decision-making.",
     image: '/assets/python.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['Python', 'Analysis', 'Visualization'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
     whatsapp: 'https://chat.whatsapp.com/HkrLN4L6LdaGuhj1TqkYWT',
@@ -415,68 +447,80 @@ const detailedCourses: CourseDetails[] = [
         title:
           'Python - Introduction, variables, constants, strings, lists and maps.',
         day: 'Day 1',
-        description: '',
+        description:
+          'Introduction to Python programming language covering basic concepts like variables, constants, strings, lists, and dictionaries (maps).',
       },
       {
         title: 'Python - conditionals, loops and functions.',
         day: 'Day 2',
-        description: '',
+        description:
+          'Exploration of Python conditionals (if, elif, else), loops (for, while), and functions (defining functions, passing arguments, return values).',
       },
       {
         title: 'Python - classes and packages. How to read documentation?',
         day: 'Day 3',
-        description: '',
+        description:
+          'Understanding Python classes, object-oriented programming (OOP) concepts, and exploring packages. Guidance on effective use of documentation.',
       },
       {
         title:
           'Importing/loading datasets. Data wrangling, preprocessing and cleanup. Handling excel, csv and dataframes.',
         day: 'Day 4',
-        description: '',
+        description:
+          'Practical techniques for importing and handling datasets in Python, including data wrangling, preprocessing, and cleanup tasks with Pandas. Management of Excel, CSV files, and dataframes.',
       },
       {
         title:
           'Exploratory data analysis with pandas and numpy. Basic statistical analysis like mean, median, mode, standard deviation, percentiles etc.',
         day: 'Day 5',
-        description: '',
+        description:
+          'Performing exploratory data analysis (EDA) using Pandas and NumPy libraries. Basic statistical analysis techniques such as mean, median, mode, standard deviation, and percentiles.',
       },
       {
         title:
           'Plotting with matplotlib. Visually appealing visualizations for papers and presentations.',
         day: 'Day 6',
-        description: '',
+        description:
+          'Introduction to Matplotlib for creating visually appealing plots and visualizations suitable for academic papers and presentations.',
       },
       {
         title:
           'Area plots, histograms, bar charts, pie charts, box plots, and scatter plots.',
         day: 'Day 7',
-        description: '',
+        description:
+          'Creating various types of plots including area plots, histograms, bar charts, pie charts, box plots, and scatter plots using Matplotlib and Pandas.',
       },
       {
         title:
           'Classification and regression decision trees. Linear regression, logistic regression.',
         day: 'Day 8',
-        description: '',
+        description:
+          'Introduction to decision trees for classification and regression tasks. Implementing linear regression and logistic regression models in Python.',
       },
       {
         title: 'Handling 3D data. Bubble plots, heatmaps and 3D bar charts.',
         day: 'Day 9',
-        description: '',
+        description:
+          'Techniques for handling and visualizing 3D data including bubble plots, heatmaps, and 3D bar charts using Matplotlib and Pandas.',
       },
       {
         title:
           'Normality, Statistical tests, confidence interval estimates etc.',
         day: 'Day 10',
-        description: '',
+        description:
+          'Understanding normality assumptions, performing statistical tests, and estimating confidence intervals in data analysis using Python.',
       },
       {
         title: 'Visualizing geospatial data with folium.',
         day: 'Day 11',
-        description: '',
+        description:
+          'Using Folium library for visualizing geospatial data and creating interactive maps with Python.',
       },
       {
         title: 'Model evaluation and refinement. Testing.',
         day: 'Day 12',
-        description: '',
+        description:
+          'Methods for evaluating and refining machine learning models. Techniques for testing model performance and effectiveness in Python.',
       },
     ],
     relatedCourses: ['2', '5'],
@@ -531,6 +575,29 @@ const detailedCourses: CourseDetails[] = [
         image: '/assets/community.png',
       },
     ],
+    keywords: [
+      'Python',
+      'Data Analysis',
+      'Data Visualization',
+      'Pandas',
+      'Matplotlib',
+      'NumPy',
+      'Folium',
+      'Seaborn',
+      'Plotly',
+      'Scikit-learn',
+      'Jupyter Notebook',
+      'Data Cleaning',
+      'Statistical Analysis',
+      'Machine Learning',
+      'Exploratory Data Analysis',
+      'Data Wrangling',
+      'Data Mining',
+      'Data Transformation',
+      'Data Manipulation',
+      'Data Modeling',
+      'Feature Engineering',
+    ],
   },
   {
     courseId: '4',
@@ -538,7 +605,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       'The Certificate Course in Remote Sensing offers a comprehensive training program, covering essential principles of remote sensing and hands-on experience with relevant software. This course provides practical skills in image processing, classification, and spatial modeling, enabling participants to harness the power of remote sensing data for environmental monitoring, resource management, and GIS applications. ',
     image: '/assets/rm.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['Remote Sensing', 'Observation'],
     prevPrice: '₹10,700',
     currentPrice: '₹2,990',
     whatsapp: 'https://chat.whatsapp.com/C1JrWWEMrbwBp785QnFNVj',
@@ -546,89 +613,93 @@ const detailedCourses: CourseDetails[] = [
     formLink: 'https://forms.gle/4XCdgsjLha6iwnga8',
     lessons: [
       {
-        title:
-          'Introduction to Remote Sensing: A Short History of Remote Sensing; Introduction to Digital Data; Important Basic Concepts of Remote Sensing; Geographic Concepts',
+        title: 'Introduction to Remote Sensing',
         day: 'Day 1',
-        description: '',
+        description:
+          'A Short History of Remote Sensing; Introduction to Digital Data; Important Basic Concepts of Remote Sensing; Geographic Concepts',
       },
       {
-        title:
-          'Satellite Image Technology and Basics: The Electromagnetic Spectrum; Passive/Active Sensors; Remote Sensing Sensor Platforms; Analogue Aerial Photography; Digital Imagery; Imagery Types',
+        title: 'Satellite Image Technology and Basics',
         day: 'Day 2',
-        description: '',
+        description:
+          'The Electromagnetic Spectrum; Passive/Active Sensors; Remote Sensing Sensor Platforms; Analogue Aerial Photography; Digital Imagery; Imagery Types',
       },
       {
-        title: 'Image Processing Software Installation Demo',
+        title: 'Software Installation',
         day: 'Day 3',
-        description: '',
+        description: 'Image Processing Software Installation Demo',
       },
       {
-        title:
-          'Satellite Image Pre Processing-I: Satellite Data Downloading; FCC Preparation; Colour Matching; Hands on Practice',
+        title: 'Satellite Image Pre Processing-I',
         day: 'Day 4',
-        description: '',
+        description:
+          'Satellite Data Downloading; FCC Preparation; Colour Matching; Hands on Practice',
       },
       {
-        title:
-          'Satellite Image Pre Processing-II: Image Pre-Processing; Hands on Practice',
+        title: 'Satellite Image Pre Processing-II',
         day: 'Day 5',
-        description: '',
+        description: 'Image Pre-Processing; Hands on Practice',
       },
       {
-        title:
-          'Satellite Image Pre Processing-III: Image Referencing and Transformation; Image Mosaics; Hands on Practice',
+        title: 'Satellite Image Pre Processing-III',
         day: 'Day 6',
-        description: '',
+        description:
+          'Image Referencing and Transformation; Image Mosaics; Hands on Practice',
       },
       {
-        title: 'Hands on Practice for Satellite Image Pre Processing',
+        title: 'Hands on Practice',
         day: 'Day 7',
-        description: '',
+        description: 'Hands on Practice for Satellite Image Pre Processing',
       },
       {
-        title: 'Image Processing-I: Image Enhancement; Hands on Practice',
+        title: 'Image Processing-I',
         day: 'Day 8',
-        description: '',
+        description: 'Image Enhancement; Hands on Practice',
       },
       {
-        title: 'Image Processing-II: Image Fusion; Hands on Practice',
+        title: 'Image Processing-II',
         day: 'Day 9',
-        description: '',
+        description: 'Image Fusion; Hands on Practice',
       },
       {
-        title: 'Image Processing-III: Image Classification; Hands on Practice',
+        title: 'Image Classification-I',
         day: 'Day 10',
-        description: '',
+        description:
+          'General Introduction; Vector File Creation; Raster File Creation; Hands-on Practice.',
       },
       {
-        title: 'Image Processing-IV: Image Analysis; Hands on Practice',
+        title: 'Image Classification-II',
         day: 'Day 11',
-        description: '',
+        description:
+          'Digital Classification; Image Classification Unsupervised; Image Classification Supervised; Hands-on Practice.',
       },
       {
-        title: 'Image Processing-V: Image Interpretation; Hands on Practice',
+        title: 'Image Classification-III',
         day: 'Day 12',
-        description: '',
+        description:
+          'On Screen Visual Interpretation; Change Detection; Vegetation Indices Analysis; Hands-on Practice.',
       },
       {
-        title: 'Image Processing-VI: Image Enhancement; Hands on Practice',
+        title: 'Hands on Practice',
         day: 'Day 13',
-        description: '',
+        description: 'Hands on Practice for Image Classification',
       },
       {
-        title: 'Image Processing-VII: Image Fusion; Hands on Practice',
+        title: 'Satellite Image Analysis-I',
         day: 'Day 14',
-        description: '',
+        description: 'Attribute Formation; Colour Coding; Hands-on Practice.',
       },
       {
-        title: 'Image Processing-VIII: Image Classification; Hands on Practice',
+        title: 'Satellite Image Analysis-II',
         day: 'Day 15',
-        description: '',
+        description:
+          'Area Calculation; Statistics Generation; Hands-on Practice.',
       },
       {
-        title: 'Image Processing-IX: Image Analysis; Hands on Practice',
+        title: 'Advanced Technology of Remote Sensing',
         day: 'Day 16',
-        description: '',
+        description:
+          'Brief Description of Optical, Microwave, LiDAR & Hyperspectral Data; Advancement of Microwave, LiDAR and Hyperspectral over Optical Data; Use Cases of Various Aspects of Remote Sensing; UAV (Unmanned Aerial Vehicle).',
       },
     ],
     relatedCourses: ['2', '5'],
@@ -682,6 +753,41 @@ const detailedCourses: CourseDetails[] = [
           'Access to an exclusive online community for discussions and support',
         image: '/assets/community.png',
       },
+    ],
+    keywords: [
+      'Remote Sensing',
+      'Erdas Imagine',
+      'Digital Data',
+      'Satellite Image Technology',
+      'Electromagnetic Spectrum',
+      'Sensors',
+      'Sensor Platforms',
+      'Aerial Photography',
+      'Digital Imagery',
+      'Image Processing',
+      'Satellite Data',
+      'FCC',
+      'Image Referencing',
+      'Image Transformation',
+      'Image Mosaics',
+      'Image Enhancement',
+      'Image Fusion',
+      'Image Classification',
+      'Vector Data',
+      'Raster Data',
+      'Digital Classification',
+      'Unsupervised Classification',
+      'Supervised Classification',
+      'Visual Interpretation',
+      'Digital Analysis',
+      'Optical Data',
+      'Microwave Data',
+      'LiDAR Data',
+      'Hyperspectral Data',
+      'Spatial Modeling',
+      'UAVs',
+      'Geographical Information System',
+      'Resolution',
     ],
   },
   {
@@ -691,7 +797,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       'Embark on a transformative journey into the realm of research methodology. From laying the groundwork with fundamentals and diverse methodologies to navigating the intricacies of formulating hypotheses and writing impactful papers, each class unfolds a new chapter. Delve into practical insights, enhance your writing skills, and master the art of effective presentations. Join us to foster your passion for research and equip yourself with the tools needed for scholarly success.',
     image: '/assets/rdp.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['Research Methodology', 'Writing'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
     whatsapp: 'https://chat.whatsapp.com/HLFjC7Usbs12NDdY0pR1fV',
@@ -699,74 +805,74 @@ const detailedCourses: CourseDetails[] = [
     formLink: 'https://forms.gle/EcBkBU18eM3o96S38',
     lessons: [
       {
-        title:
-          'Fundamentals of Research: Importance & Scope; Research: Meaning, Types, Objectives, Characteristics; Positivism and Post Positivism to Research; Introducing the Idea of Research in Social Sciences; Limitation of Research',
+        title: 'Fundamentals of Research',
         day: 'Day 1',
-        description: '',
+        description:
+          'Importance & Scope; Research: Meaning, Types, Objectives, Characteristics; Positivism and Post Positivism to Research; Introducing the Idea of Research in Social Sciences; Limitation of Research',
       },
       {
-        title:
-          'Research Process; Research Designs and Variables; Vectoring and Examples',
+        title: 'Research Design',
         day: 'Day 2',
-        description: '',
+        description:
+          'Research Process; Research Designs and Variables; Vectoring and Examples',
       },
       {
-        title: 'Various Methods and Techniques of Research',
+        title: 'Research Techniques',
         day: 'Day 3',
-        description: '',
+        description: 'Various Methods and Techniques of Research.',
       },
       {
-        title:
-          'Formulation of Research Problem; Articulating your Synopsis; How to map the thesis to a claim?',
+        title: 'Research Problem',
         day: 'Day 4',
-        description: '',
+        description:
+          'Formulation of Research Problem; Articulating your Synopsis; How to map the thesis to a claim?',
       },
       {
-        title:
-          'Formulation of Hypothesis: Concepts, Types, Sources; Characteristics of a Good Hypothesis; Hypothesis testing and Evaluation Design',
+        title: 'Hypothesis Formulation',
         day: 'Day 5',
-        description: '',
+        description:
+          'Concepts, Types, Sources; Characteristics of a Good Hypothesis; Hypothesis testing and Evaluation Design',
       },
       {
-        title:
-          'How to read a research paper?; Review of Literature; Referencing System',
+        title: 'Literature Review',
         day: 'Day 6',
-        description: '',
+        description:
+          'How to read a research paper?; Review of Literature; Referencing System',
       },
       {
-        title:
-          'Precaution in Preparing the Research Report; The Mechanics of Writing: Report, Dissertation, Thesis; Index/Content, Appendix, Footnotes, Endnotes, Use of Diacritical Marks',
+        title: 'Content Writing I',
         day: 'Day 7',
-        description: '',
+        description:
+          'Precaution in Preparing the Research Report; The Mechanics of Writing: Report, Dissertation, Thesis; Index/Content, Appendix, Footnotes, Endnotes, Use of Diacritical Marks',
       },
       {
-        title:
-          'Quotation, Citation, Bibliographical References; Drawing Conclusion, Giving Suggestions and Recommendations; Claims and Implied Evaluation',
+        title: 'Content Writing II',
         day: 'Day 8',
-        description: '',
+        description:
+          'Quotation, Citation, Bibliographical References; Drawing Conclusion, Giving Suggestions and Recommendations; Claims and Implied Evaluation',
       },
       {
-        title:
-          'Writing Abstract, Book Review, Content Writing; Writing and Editing Research Papers; How to Avoid Plagiarism',
+        title: 'Content Writing III',
         day: 'Day 9',
-        description: '',
+        description:
+          'Writing Abstract, Book Review, Content Writing; Writing and Editing Research Papers; How to Avoid Plagiarism',
       },
       {
-        title:
-          'Formulation of Research Proposal; How to Ask for Funding/Collaboration?; How to Give a Presentation',
+        title: 'Research Proposal',
         day: 'Day 10',
-        description: '',
+        description:
+          'Formulation of Research Proposal; How to Ask for Funding/Collaboration?; How to Give a Presentation',
       },
       {
-        title: 'Writing Well-Formatted Papers: LATEX and Overleaf',
+        title: 'Paper Formatting',
         day: 'Day 11',
-        description: '',
+        description: 'Writing Well-Formatted Papers: LATEX and Overleaf',
       },
       {
-        title:
-          'Use of Internet in Research: Email, Google Scholar, Interaction through Social Networking and Other Channels; How to Showcase your Work on the Web?; Understanding Impact Factor, Citations, H-index etc.',
+        title: 'Use of Internet in Research',
         day: 'Day 12',
-        description: '',
+        description:
+          'Email, Google Scholar, Interaction through Social Networking and Other Channels; How to Showcase your Work on the Web?; Understanding Impact Factor, Citations, H-index etc.',
       },
     ],
     relatedCourses: ['2', '5'],
@@ -820,6 +926,24 @@ const detailedCourses: CourseDetails[] = [
           'Access to an exclusive online community for discussions and support',
         image: '/assets/community.png',
       },
+    ],
+    keywords: [
+      'Research Methodology',
+      'Research Design',
+      'Writing',
+      'Literature Review',
+      'Hypothesis Formulation',
+      'Research Proposal',
+      'Thesis Writing',
+      'Academic Writing',
+      'Scientific Writing',
+      'Research Ethics',
+      'Project Planning',
+      'Data Analysis',
+      'Peer Review',
+      'Citation Management',
+      'Plagiarism Avoidance',
+      'Presentation Skills',
     ],
   },
   {
@@ -829,7 +953,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       'Join us to master the intricacies of data collection and analysis in research. Explore the qualities of a researcher, delve into sampling techniques, and design effective questionnaires. Get hands-on with data preprocessing, Python-based exploratory data analysis, and visualization. This course is tailored for students eager to enhance their skills in collecting, processing, and analyzing data for impactful research.',
     image: '/assets/cloud-data.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['Research Methodology', 'Analysis'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
     whatsapp: 'https://chat.whatsapp.com/HLFjC7Usbs12NDdY0pR1fV',
@@ -837,71 +961,70 @@ const detailedCourses: CourseDetails[] = [
     formLink: 'https://forms.gle/waNVN81LwwTR5Mwh8',
     lessons: [
       {
-        title: 'Application of Remote Sensing in Research',
+        title: 'Qualities of Researcher',
         day: 'Day 1',
-        description: '',
+        description:
+          'Attitude Measuring and Observation; Importance of Velocity; Preparing your Elevator Pitch',
       },
       {
-        title: 'Application of GIS in Research',
+        title: 'Sampling Design Techniques',
         day: 'Day 2',
-        description: '',
+        description:
+          'Concepts and Types; Selection of Suitable Sampling Techniques; Sampling Size Decision; Sampling Error',
       },
       {
-        title: 'Use of Statistical Techniques in Research',
+        title: 'Data Types and Sources',
         day: 'Day 3',
-        description: '',
+        description:
+          'Primary and Secondary; Application of Sampling in various types; User Study',
       },
       {
-        title: 'Data Analysis and Visualisation with SPSS',
+        title: 'Data Collection',
         day: 'Day 4',
-        description: '',
+        description: 'Designing Questionnaire/Interview Schedule',
       },
       {
-        title:
-          'Scale Techniques: Concepts, Types, Rating and Ranking Scale; Scale Construction Techniques, Multidimensional Scaling',
+        title: 'Data Preprocessing',
         day: 'Day 5',
-        description: '',
+        description:
+          'Data Preparation, Tabulation, Coding and Editing; Graphical Representation and Mapping',
       },
       {
-        title:
-          'Qualities of Researcher; Attitude Measuring and Observation; Importance of Velocity; Preparing your Elevator Pitch',
+        title: 'Introduction to Python',
         day: 'Day 6',
-        description: '',
+        description:
+          'Exploratory Data Analysis with Python; Handling Large Excel and CSV files Using Open Street Maps',
       },
       {
-        title:
-          'Sampling Design Techniques: Concepts and Types; Selection of Suitable Sampling Techniques; Sampling Size Decision; Sampling Error',
+        title: 'More Python concepts',
         day: 'Day 7',
-        description: '',
+        description: 'Data Analysis and Visualisation with Python.',
       },
       {
-        title:
-          'Data Types and Sources: Primary and Secondary; Application of Sampling in various types; User Study',
+        title: 'Remote Sensing',
         day: 'Day 8',
-        description: '',
+        description: 'Application of Remote Sensing in Research.',
       },
       {
-        title: 'Designing Questionnaire/Interview Schedule',
+        title: 'Geographical Information System',
         day: 'Day 9',
-        description: '',
+        description: 'Application of GIS in Research.',
       },
       {
-        title:
-          'Data Preprocessing: Data Preparation, Tabulation, Coding and Editing; Graphical Representation and Mapping',
+        title: 'Statistical Techniques',
         day: 'Day 10',
-        description: '',
+        description: 'Use of Statistical Techniques in Research.',
       },
       {
-        title:
-          'Introduction to Python; Exploratory Data Analysis with Python; Handling Large Excel and CSV files Using Open Street Maps',
+        title: 'Statistical Package In Social Sciences',
         day: 'Day 11',
-        description: '',
+        description: 'Data Analysis and Visualisation with SPSS.',
       },
       {
-        title:
-          'More Python concepts; Data Analysis and Visualisation with Python',
+        title: 'Scale Techniques',
         day: 'Day 12',
-        description: '',
+        description:
+          'Concepts, Types, Rating and Ranking Scale; Scale Construction Techniques; Multidimensional Scaling.',
       },
     ],
     relatedCourses: ['2', '5'],
@@ -956,6 +1079,25 @@ const detailedCourses: CourseDetails[] = [
         image: '/assets/community.png',
       },
     ],
+    keywords: [
+      'Research Methodology',
+      'Data Collection',
+      'Data Analysis',
+      'Sampling Techniques',
+      'Questionnaire Design',
+      'Data Preprocessing',
+      'Python',
+      'Remote Sensing',
+      'GIS',
+      'SPSS',
+      'Statistical Analysis',
+      'Survey Design',
+      'Data Interpretation',
+      'Quantitative Research',
+      'Qualitative Research',
+      'Data Management',
+      'Research Ethics',
+    ],
   },
   {
     courseId: '7',
@@ -963,7 +1105,7 @@ const detailedCourses: CourseDetails[] = [
     description:
       'Join us to work on your very own research project or pick from one of our ideas that aligns with your interests. This will involve working with our experts to apply your Remote Sensing and GIS skills to real world case studies. In the end, you get an opportunity to publish a research paper!',
     image: '/assets/report.png',
-    tags: ['React', 'JavaScript', 'Frontend'],
+    tags: ['Remote Sensing', 'Project'],
     prevPrice: '₹9,600',
     currentPrice: '₹2,596',
     whatsapp: 'https://chat.whatsapp.com/CxMeIeJcX5v4NDtE0Inld2',
@@ -973,47 +1115,49 @@ const detailedCourses: CourseDetails[] = [
       {
         title: 'Topic Discussion',
         description:
-          'Overview, A Brief History of GIS, Essential Components of GIS, Software Installation',
+          'Identify and finalize research topics; Discuss objectives and scope; Establish research questions and hypotheses.',
         day: 'Day 1',
       },
       {
         title: 'Synopsis Draft',
-        description: 'GIS System, Projection System, Hands on Practice',
+        description:
+          'Create a draft of the research synopsis, outline the methodology and expected outcomes, and review and refine research questions and hypotheses.',
         day: 'Day 2',
       },
       {
         title: 'Data Collection and Cleanup',
         description:
-          'Geodatabase Preparation, Type of GIS Layers, Hands on Practice',
+          'Gather necessary data from primary and secondary sources, perform initial data cleaning for accuracy, and organize data for analysis.',
         day: 'Day 3',
       },
       {
         title: 'Data Analysis',
         description:
-          'Georeferencing of Vector, Georeferencing of Raster, Projection Transformation, Hands on Practice',
+          'Apply statistical or qualitative analysis methods, interpret results in the context of research questions and hypotheses, and identify patterns, trends, and insights.',
         day: 'Day 4',
       },
       {
         title: 'Data Management',
         description:
-          'Digitisation of Point, Line and Polygon, Filling Attributes, Attribute Joining, Area and Perimeter Calculation, Calculations in Attributes, Hands on Practice',
+          'Review progress with peers or mentors, identify gaps or areas needing further work, and adjust the research plan as necessary.',
         day: 'Day 5',
       },
       {
         title: 'Mapping and Visualisation',
         description:
-          'Vector Operations in GIS Platform, ArcGIS-Clip Management and Mosaic, Raster and Vector Data Clipping, Making Sample Location with GPS Location, Hands on Practice',
+          'Create visual representations of data (charts, graphs, maps), use tools for effective data visualization, and interpret visual data to support research findings.',
         day: 'Day 6',
       },
       {
         title: 'Presentation',
         description:
-          'Extraction by points, Extraction by mask, Maths tools, Reclassify, Hands on Practice',
+          'Prepare a presentation of research findings focusing on key insights and implications, and practice and refine presentation skills.',
         day: 'Day 7',
       },
       {
         title: 'Report Writing',
-        description: 'Condition, Interpolation, Hands on Practice',
+        description:
+          'Compile research findings into a comprehensive report, ensure clarity, coherence, and logical flow, and edit and proofread the final document.',
         day: 'Day 8',
       },
     ],
@@ -1068,6 +1212,23 @@ const detailedCourses: CourseDetails[] = [
           'Access to an exclusive online community for discussions and support',
         image: '/assets/community.png',
       },
+    ],
+    keywords: [
+      'Research Project',
+      'Remote Sensing',
+      'GIS',
+      'Data Analysis',
+      'Data Collection',
+      'Mapping',
+      'Visualisation',
+      'Geospatial Analysis',
+      'Earth Observation',
+      'Spatial Data',
+      'Satellite Imagery',
+      'Cartography',
+      'Geographic Information Systems',
+      'Environmental Monitoring',
+      'Spatial Modelling',
     ],
   },
 ];

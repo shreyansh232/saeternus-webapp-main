@@ -19,31 +19,31 @@ const navigations: Navigation[] = [
 
 const Navbar = () => {
   return (
-    <nav className='sticky inset-x-0 top-0 z-30 h-14 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
-      <MaxWidthWrapper>
-        <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
-          <Link
-            href='/'
-            className='z-40 flex items-center justify-between gap-2 font-semibold'
-          >
-            <Image
-              src='/android-chrome-192x192.png'
-              alt='Saeturnus Logo'
-              width={32}
-              height={32}
-            />
-            <span className='text-primary'>Saeturnus</span>
-          </Link>
+    <nav className='sticky inset-x-0 top-0 z-30 h-20 w-full border-b border-gray-200 bg-white/75 text-xl shadow-md backdrop-blur-lg transition-all'>
+      {/* <MaxWidthWrapper> */}
+      <div className='mx-10 flex h-20 items-center justify-between '>
+        <Link
+          href='/'
+          className='z-40 flex items-center justify-between gap-2 font-semibold'
+        >
+          <Image
+            src='/android-chrome-192x192.png'
+            alt='Saeturnus Logo'
+            width={32}
+            height={32}
+          />
+          <span className='text-primary'>Saeturnus</span>
+        </Link>
 
-          {/* hamburger menu */}
-          <SmallScreenNav navigations={navigations} />
+        {/* hamburger menu */}
+        <SmallScreenNav navigations={navigations} />
 
-          {/* nav option large screen */}
-          <div className='hidden items-center space-x-4 sm:flex'>
-            <WideScreenNav navigations={navigations} />
-          </div>
+        {/* nav option large screen */}
+        <div className='hidden items-center space-x-4 sm:flex'>
+          <WideScreenNav navigations={navigations} />
         </div>
-      </MaxWidthWrapper>
+      </div>
+      {/* </MaxWidthWrapper> */}
     </nav>
   );
 };

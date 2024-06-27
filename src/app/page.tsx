@@ -16,7 +16,7 @@ export default function Home() {
           Innovating for your
           <span className='text-primary'> success</span>
         </h1>
-        <h2 className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
+        <h2 className='mt-10 max-w-prose text-zinc-700 sm:text-lg lg:text-xl'>
           <span className='text-primary'>Your success is our success</span>. We
           are committed to delivering innovative solutions and exceptional
           service to help you achieve your goals.{' '}
@@ -29,7 +29,7 @@ export default function Home() {
         <Link
           className={buttonVariants({
             size: 'lg',
-            className: 'mt-5',
+            className: 'mt-10 text-xl',
           })}
           href='/courses'
         >

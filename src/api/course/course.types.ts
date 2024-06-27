@@ -37,4 +37,5 @@ export interface CourseDetails {
   startDate: string;
   whatYouWillLearn: string[];
   courseMeta: courseMeta[];
+  keywords: string[];
 }

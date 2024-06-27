@@ -43,7 +43,7 @@ export default function Course() {
           Courses we offer for your
           <span className='text-primary'> success</span>
         </h1>
-        <form className='mb-2 mt-4 max-w-full sm:mt-10 sm:max-w-md lg:-ml-14 lg:self-start'>
+        <form className='mb-2 mt-4 max-w-full sm:mt-10 sm:max-w-md'>
           <label
             htmlFor='default-search'
             className='sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white'
@@ -51,7 +51,7 @@ export default function Course() {
             Search
           </label>
           <div className='relative'>
-            <div className='pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3'>
+            <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
               <svg
                 className='h-4 w-4 text-gray-500 dark:text-gray-400'
                 aria-hidden='true'
@@ -61,9 +61,9 @@ export default function Course() {
               >
                 <path
                   stroke='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
                 />
               </svg>
@@ -71,14 +71,14 @@ export default function Course() {
             <input
               type='search'
               id='default-search'
-              className='block h-[40px] w-[250px] rounded-xl border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary'
+              className='block h-10 w-[340px] rounded-xl border border-gray-300 bg-gray-50 pl-10 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary lg:w-[400px]'
               placeholder='Search for courses'
               required
               onChange={handleSearch}
             />
           </div>
         </form>
-        <div className='flex flex-wrap items-center justify-center gap-5 lg:w-[1250px]'>
+        <div className='flex flex-wrap items-center justify-center gap-5 xl:w-[1250px]'>
           {filteredCourses.map((course) => (
             <CourseCard
               key={course.courseId}
@@ -92,9 +92,9 @@ export default function Course() {
             />
           ))}
         </div>
-        <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
-          <h1 className='text-xs font-bold '>Keywords</h1>
-          <div className='flex items-center justify-start break-normal text-xs text-gray-600'>
+        <div className='mt-20 w-full text-left'>
+          <h1 className='mb-2 text-xs font-bold'>Keywords</h1>
+          <div className='flex flex-wrap items-center justify-start break-normal text-xs text-gray-600'>
             {keywords}.
           </div>
         </div>
