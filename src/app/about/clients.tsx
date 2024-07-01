@@ -2,24 +2,45 @@ import React from 'react';
 import Image from 'next/image';
 
 const clients = [
-  { name: 'Client 1', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 2', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 3', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 4', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 5', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 6', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 7', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 8', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 9', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 10', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 11', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 12', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 13', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 14', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 15', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 16', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 17', logo: 'images/logo-placeholder.png' },
-  { name: 'Client 18', logo: 'images/logo-placeholder.png' },
+  {
+    name: 'Banaras Hindu University',
+    logo: '/images/banaras-hindu-university-bhu.png',
+  },
+  {
+    name: 'Jawaharlal Nehru University',
+    logo: '/images/jawahar-lal-nehru-jnu.png',
+  },
+  {
+    name: 'Aligarh Muslim University',
+    logo: '/images/aligarh-muslim-university-amu.png',
+  },
+  { name: 'University of Madras', logo: '/images/university-of-madras.png' },
+  { name: 'Osmania University', logo: '/images/osmania-university.png' },
+  { name: 'Panjab University', logo: '/images/panjab-university.png' },
+  { name: 'University of Kerala', logo: '/images/university-of-kerala.png' },
+  {
+    name: 'University of Rajasthan',
+    logo: '/images/university-of-rajasthan.png',
+  },
+  { name: 'Lucknow University', logo: '/images/lucknow-university.png' },
+  {
+    name: "King George's Medical University",
+    logo: '/images/king-georges-medical-university.png',
+  },
+  {
+    name: 'North-Eastern Hill University',
+    logo: '/images/northeastern-hill-university.png',
+  },
+  {
+    name: 'Himachal Pradesh University',
+    logo: '/images/himachal-pradesh-university.svg',
+  },
+  { name: 'Tamil University', logo: '/images/tamil-university.png' },
+  { name: 'Kashmir University', logo: '/images/kashmir-university.png' },
+  { name: 'Deccan College', logo: '/images/deccan-college.png' },
+  { name: 'BAMU India', logo: '/images/bamu-india.png' },
+  { name: 'University of Ibadan', logo: '/images/university-of-ibadan.png' },
+  { name: 'IISER Mohali', logo: '/images/iiser-mohali.png' },
 ];
 
 export default function Clients() {
