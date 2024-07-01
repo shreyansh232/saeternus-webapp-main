@@ -38,7 +38,7 @@ const courses: CourseInfo[] = [
     courseId: '4',
     title: 'Remote Sensing Certification',
     header: 'Certificate Course in Remote Sensing',
-    image: '/assets/rm.png',
+    image: '/assets/RemoteSensing.png',
     tags: ['Remote Sensing', 'Observation'],
     prevPrice: '₹10,700',
     currentPrice: '₹2,990',
@@ -48,7 +48,7 @@ const courses: CourseInfo[] = [
     title: 'Research Methodology - Research Design and Writing',
     header:
       'Certificate Course in Research Methodology - Research Design and Writing',
-    image: '/assets/rdp.png',
+    image: '/assets/ResearchDesignWriting.png',
     tags: ['Research Methodology', 'Writing'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
@@ -58,7 +58,7 @@ const courses: CourseInfo[] = [
     title: 'Research Methodology Data Collection and Analysis',
     header:
       'Certificate Course in Research Methodology - Data Collection and Analysis',
-    image: '/assets/cloud-data.png',
+    image: '/assets/ResearchMethodology.png',
     tags: ['Research Methodology', 'Analysis'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
@@ -67,7 +67,7 @@ const courses: CourseInfo[] = [
     courseId: '7',
     title: 'Remote Sensing and GIS Project',
     header: 'Research Project in Remote Sensing and GIS',
-    image: '/assets/report.png',
+    image: '/assets/RemoteSensingGIS.png',
     tags: ['Remote Sensing', 'Project'],
     prevPrice: '₹9,600',
     currentPrice: '₹2,596',
@@ -604,7 +604,7 @@ const detailedCourses: CourseDetails[] = [
     title: 'Certificate Course in Remote Sensing',
     description:
       'The Certificate Course in Remote Sensing offers a comprehensive training program, covering essential principles of remote sensing and hands-on experience with relevant software. This course provides practical skills in image processing, classification, and spatial modeling, enabling participants to harness the power of remote sensing data for environmental monitoring, resource management, and GIS applications. ',
-    image: '/assets/rm.png',
+    image: '/assets/RemoteSensing.png',
     tags: ['Remote Sensing', 'Observation'],
     prevPrice: '₹10,700',
     currentPrice: '₹2,990',
@@ -796,7 +796,7 @@ const detailedCourses: CourseDetails[] = [
       'Certificate Course in Research Methodology - Research Design and Writing',
     description:
       'Embark on a transformative journey into the realm of research methodology. From laying the groundwork with fundamentals and diverse methodologies to navigating the intricacies of formulating hypotheses and writing impactful papers, each class unfolds a new chapter. Delve into practical insights, enhance your writing skills, and master the art of effective presentations. Join us to foster your passion for research and equip yourself with the tools needed for scholarly success.',
-    image: '/assets/rdp.png',
+    image: '/assets/ResearchDesignWriting.png',
     tags: ['Research Methodology', 'Writing'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
@@ -952,7 +952,7 @@ const detailedCourses: CourseDetails[] = [
       'Certificate Course in Research Methodology - Data Collection and Analysis',
     description:
       'Join us to master the intricacies of data collection and analysis in research. Explore the qualities of a researcher, delve into sampling techniques, and design effective questionnaires. Get hands-on with data preprocessing, Python-based exploratory data analysis, and visualization. This course is tailored for students eager to enhance their skills in collecting, processing, and analyzing data for impactful research.',
-    image: '/assets/cloud-data.png',
+    image: '/assets/ResearchMethodology.png',
     tags: ['Research Methodology', 'Analysis'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
@@ -1104,7 +1104,7 @@ const detailedCourses: CourseDetails[] = [
     title: 'Research Project in Remote Sensing and GIS',
     description:
       'Join us to work on your very own research project or pick from one of our ideas that aligns with your interests. This will involve working with our experts to apply your Remote Sensing and GIS skills to real world case studies. In the end, you get an opportunity to publish a research paper!',
-    image: '/assets/report.png',
+    image: '/assets/RemoteSensingGIS.png',
     tags: ['Remote Sensing', 'Project'],
     prevPrice: '₹9,600',
     currentPrice: '₹2,596',

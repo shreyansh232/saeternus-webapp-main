@@ -40,7 +40,7 @@ export default function Home() {
 
       <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row sm:pt-40 xl:p-60'>
         <div className='sm:flex-1'>
-          <h1 className='text-4xl font-bold'>Start Learning with Saeturnus</h1>
+          <h1 className='text-4xl font-bold'>Start Learning with Saeternus</h1>
           <p className='mt-2 text-lg'>
             Get unlimited access to structured videos and learning resources.
           </p>

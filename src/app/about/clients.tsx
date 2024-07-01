@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const clients = [
   { name: 'Client 1', logo: 'images/logo-placeholder.png' },
@@ -28,10 +29,15 @@ export default function Clients() {
       <p className='mb-4 text-center text-sm font-normal'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ad?
       </p>
-      <div className='gap-4 ml-14 mr-14 grid grid-cols-3 md:grid-cols-6'>
+      <div className='ml-14 mr-14 grid grid-cols-3 gap-4 md:grid-cols-6'>
         {clients.map((client) => (
           <div key={client.name} className='flex items-center justify-center'>
-            <img src={client.logo} alt={client.name} className='h-16 w-auto' />
+            <Image
+              src={client.logo}
+              alt={client.name}
+              width={120}
+              height={60}
+            />
           </div>
         ))}
       </div>

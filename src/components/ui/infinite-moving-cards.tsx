@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -110,11 +111,12 @@ export const InfiniteMovingCards = ({
               </span>
 
               <div className="absolute bottom-0 mb-4 flex items-center gap-2">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-10 h-10 rounded-full"
-                />
+               <Image
+                src={item.image}
+                alt={item.name}
+                width={40} 
+                height={40} 
+                className="rounded-full" />
                 <div className="flex flex-col">
                   <span className="text-md leading-[1.6] text-primary font-normal">
                     {item.name}

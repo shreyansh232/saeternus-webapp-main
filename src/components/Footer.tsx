@@ -42,6 +42,34 @@ function Footer() {
             </li>
             <li>
               <Link
+                href='/contact'
+                className={cn(
+                  buttonVariants({
+                    variant: 'link',
+                    size: 'sm',
+                  }),
+                  'text-black hover:text-primary'
+                )}
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/courses'
+                className={cn(
+                  buttonVariants({
+                    variant: 'link',
+                    size: 'sm',
+                  }),
+                  'text-black hover:text-primary'
+                )}
+              >
+                Courses
+              </Link>
+            </li>
+            <li>
+              <Link
                 href='/policy'
                 className={cn(
                   buttonVariants({

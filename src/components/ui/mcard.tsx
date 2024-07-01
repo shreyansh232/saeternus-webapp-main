@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Metric {
   name: string;
@@ -16,7 +17,13 @@ const MCard: React.FC<MCardProps> = ({ metric }) => {
       <h3 className="text-black text-lg xl:text-xl font-semibold whitespace-normal max-w-xs">{metric.name}</h3>
       <p className="text-4xl font-bold text-primary">{metric.value}</p>
       <div className='mt-auto flex justify-end'>
-        <img src={metric.image} alt={metric.name} className="w-14 h-14 object-contain" />
+      <Image 
+        src={metric.image} 
+        alt={metric.name} 
+        width={56}
+        height={56} 
+        className='object-contain'
+      />
       </div>
     </div>
   );

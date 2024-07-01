@@ -32,7 +32,7 @@ const Navbar = () => {
             width={32}
             height={32}
           />
-          <span className='text-primary'>Saeturnus</span>
+          <span className='text-primary'>Saeternus</span>
         </Link>
 
         {/* hamburger menu */}

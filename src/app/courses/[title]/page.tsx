@@ -117,7 +117,7 @@ export default async function Page({ params }: { params: { title: string } }) {
                         <span>
                           <Image
                             src={'/assets/whatsapp.png'}
-                            alt='whatsapp'
+                            alt='whatsapp logo'
                             width={25}
                             height={25}
                           />

@@ -4,7 +4,7 @@ import MetricsCard from './mcard';
 const metrics = [
   { name: 'Programs', value: '8', image: '/images/skills.png' },
   { name: 'Learners', value: '140+', image: '/images/participants.png' },
-  { name: 'Organisations', value: '50+', image: '/images/university.png' },
+  { name: 'Organisations', value: '50+', image: '/images/organisations.png' },
   { name: 'Country/States', value: '20+', image: '/images/state-1.png' },
   { name: 'Hours Spent', value: '3.3k+', image: '/images/hours.png' },
 ];

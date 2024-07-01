@@ -32,7 +32,7 @@ const CourseCard: React.FC<CourseInfo> = ({
           <Image
             className='absolute -right-1/4 -top-1/4 rounded-lg opacity-40'
             src={image}
-            alt='Picture of the author'
+            alt='Course Image'
             width={175}
             height={175}
           ></Image>
