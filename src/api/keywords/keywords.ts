@@ -128,3 +128,11 @@ export function getSeoKeywords() {
   };
   return keywords;
 }
+export const formatKeywords = (keywords: string[]) => {
+  const formattedKeywords = keywords.map((keyword: string) => keyword.trim());
+  return (
+    formattedKeywords.slice(0, -1).join(', ') +
+    ', ' +
+    formattedKeywords[formattedKeywords.length - 1]
+  );
+};

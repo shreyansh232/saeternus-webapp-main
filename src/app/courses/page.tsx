@@ -5,6 +5,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { getAllCourses } from '@/api/course/course';
 import { Metadata } from 'next';
 import { getSeoKeywords } from '@/api/keywords/keywords';
+import { formatKeywords } from '@/api/keywords/keywords';
 
 async function generateMetadata(): Promise<Metadata> {
   return {
@@ -18,14 +19,6 @@ export default function Course() {
   const courses = getAllCourses();
   const allKeywords = getSeoKeywords();
   const courseKeywords = allKeywords['mainCourse'];
-  const formatKeywords = (keywords: string[]) => {
-    const formattedKeywords = keywords.map((keyword: string) => keyword.trim());
-    return (
-      formattedKeywords.slice(0, -1).join(', ') +
-      ', ' +
-      formattedKeywords[formattedKeywords.length - 1]
-    );
-  };
   const keywords = formatKeywords(courseKeywords);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -93,7 +86,7 @@ export default function Course() {
           ))}
         </div>
         <div className='mt-20 w-full text-left'>
-          <h1 className='mb-2 text-xs font-bold'>Keywords</h1>
+          <h1 className='mb-2 text-xs font-bold'>Highlights</h1>
           <div className='flex flex-wrap items-center justify-start break-words text-justify text-xs text-gray-600'>
             {keywords}.
           </div>

@@ -1,12 +1,38 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook,
+  faLinkedin,
+  faXTwitter,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 import { cn } from '@/lib/utils';
 import MaxWidthWrapper from './MaxWidthWrapper';
 
+const socialLinks = [
+  { href: 'https://x.com/saeternus_', icon: faXTwitter, label: 'Twitter' },
+  {
+    href: 'https://www.instagram.com/saeternus_',
+    icon: faInstagram,
+    label: 'Instagram',
+  },
+  {
+    href: 'https://www.linkedin.com/company/saeternus/',
+    icon: faLinkedin,
+    label: 'LinkedIn',
+  },
+  {
+    href: 'https://www.facebook.com/saeternus.india',
+    icon: faFacebook,
+    label: 'Facebook',
+  },
+];
+
 function Footer() {
   return (
-    <footer className='w-full bg-white shadow dark:bg-gray-900'>
+    <footer className='w-full bg-gray-100 shadow dark:bg-gray-900'>
       <div className='mx-auto max-w-full py-8 md:py-12'>
         <MaxWidthWrapper>
           <div className='flex flex-col items-start justify-between md:flex-row'>
@@ -35,60 +61,83 @@ function Footer() {
                 <p>Email: hello@saeternus.com</p>
               </div>
             </div>
-            <div className='flex space-x-16'>
-              <div>
-                <h2 className='text-md mb-2 font-semibold text-gray-700 dark:text-gray-200'>
-                  Company
+            <div className='flex flex-col items-start space-y-4'>
+              <div className='mb-4'>
+                <h2 className='text-md mb-2 text-left font-semibold text-gray-700 dark:text-gray-200'>
+                  Follow Us
                 </h2>
-                <ul className='space-y-2 font-medium text-black dark:text-gray-400'>
-                  <li>
+                <div className='flex space-x-5'>
+                  {socialLinks.map((link) => (
                     <Link
-                      href='/about'
-                      className={cn('text-black hover:text-primary')}
+                      key={link.href}
+                      href={link.href}
+                      aria-label={link.label}
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >
-                      About
+                      <FontAwesomeIcon
+                        icon={link.icon}
+                        className='text-2xl text-black hover:text-primary dark:text-gray-400 dark:hover:text-white'
+                      />
                     </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/contact'
-                      className={cn('text-black hover:text-primary')}
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/courses'
-                      className={cn('text-black hover:text-primary')}
-                    >
-                      Courses
-                    </Link>
-                  </li>
-                </ul>
+                  ))}
+                </div>
               </div>
-              <div>
-                <h2 className='text-md mb-2 font-semibold text-gray-700 dark:text-gray-200'>
-                  Legal
-                </h2>
-                <ul className='space-y-2 font-medium text-black dark:text-gray-400'>
-                  <li>
-                    <Link
-                      href='/policy'
-                      className={cn('text-black hover:text-primary')}
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/terms'
-                      className={cn('text-black hover:text-primary')}
-                    >
-                      Terms of Service
-                    </Link>
-                  </li>
-                </ul>
+              <div className='flex space-x-16'>
+                <div>
+                  <h2 className='text-md mb-2 font-semibold text-gray-700 dark:text-gray-200'>
+                    Company
+                  </h2>
+                  <ul className='space-y-2 font-medium text-black dark:text-gray-400'>
+                    <li>
+                      <Link
+                        href='/about'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href='/contact'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href='/courses'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        Courses
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className='text-md mb-2 font-semibold text-gray-700 dark:text-gray-200'>
+                    Legal
+                  </h2>
+                  <ul className='space-y-2 font-medium text-black dark:text-gray-400'>
+                    <li>
+                      <Link
+                        href='/policy'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href='/terms'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        Terms of Service
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

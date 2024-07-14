@@ -15,10 +15,15 @@ export default function About() {
           className='absolute inset-0 h-full w-full object-cover'
         />
         <div className='absolute inset-0 bg-black bg-opacity-40 p-10 text-white md:p-40'>
-          <h1 className='text-sm font-thin'>ABOUT US</h1>
-          <p className='relative text-4xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            facere minima, voluptatem.
+          <h1 className='text-md mb-3 font-thin'>ABOUT US</h1>
+          <p className='relative break-normal text-justify text-3xl'>
+            Welcome to Saeternus, where we offer exclusive, industry-relevant
+            courses to elevate your career. Our unique educational experience
+            equips you with essential skills, ensuring you stay ahead in your
+            field. Our community-centric approach includes alumni support and
+            networking opportunities with like-minded professionals. Regardless
+            of your background, we keep you updated with the latest trends in
+            your niche.
           </p>
         </div>
       </div>
@@ -27,14 +32,17 @@ export default function About() {
           <h1 className='mb-4 text-3xl font-bold md:absolute md:mr-20 md:text-4xl'>
             Who we are
           </h1>
-          <p className='text-bold md:ml-52'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            facere minima, vel, voluptatibus, nobis tempora corporis officiis
-            esse mollitia nostrum quia minus necessitatibus voluptatem.
+          <p className='text-bold text-justify md:ml-56'>
+            We are a team of professionals with a vision to transform the
+            traditional approach to education. Our mission is to provide a
+            unique, industry-relevant learning experience. We are proud to be
+            associated with leading organizations such as the University of
+            Illinois Urbana-Champaign USA, Google, Microsoft Research, IIT
+            Bhilai, and the University of British Columbia, Canada.
           </p>
         </div>
       </div>
-      <Clients />
+      {/* <Clients /> */}
     </div>
   );
 }
