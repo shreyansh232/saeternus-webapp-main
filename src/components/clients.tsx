@@ -45,7 +45,7 @@ const clients = [
   { name: 'IISER Mohali', logo: '/images/iiser-mohali.png' },
 ];
 
-export function Clients() {
+export default function Clients() {
   return (
     <div className='container mx-auto my-8'>
       <h2 className='mb-4 text-center text-4xl font-black sm:text-5xl'>

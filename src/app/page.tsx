@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
-import { Clients } from '@/components/Clients';
+import Clients from '@/components/clients';
 import Features from '@/components/Features';
 
 import MetricsCard from '@/components/ui/metrics-card';
