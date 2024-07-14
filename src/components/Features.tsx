@@ -3,41 +3,41 @@ import Image from 'next/image';
 
 const features = [
   {
-    icon: '/path-to-live-icon.png',
+    icon: '/assets/afford.png',
     title: 'Affordable Quality',
-    description: 'Top-tier education at the most competitive prices.',
+    description: 'Top-tier education at the most competitive prices',
   },
   {
-    icon: '/path-to-tests-icon.png',
+    icon: '/assets/flexible.png',
     title: 'Flexible Learning',
     description:
       'Access live classes and recorded lectures to suit your schedule',
   },
   {
-    icon: '/path-to-doubt-icon.png',
+    icon: '/assets/focus.png',
     title: 'Focused Learning',
     description:
       'Small batch sizes for personalized attention and real-time Q&A sessions',
   },
   {
-    icon: '/path-to-centres-icon.png',
+    icon: '/assets/24.png',
     title: '24/7 Support',
     description: 'Continuous support from responsive instructors',
   },
   {
-    icon: '/path-to-centres-icon.png',
+    icon: '/assets/quality.png',
     title: 'Regulated Quality',
     description:
       'Courses are meticulously monitored for quality and effectiveness',
   },
   {
-    icon: '/path-to-centres-icon.png',
+    icon: '/assets/community.png',
     title: 'Global Community',
     description: 'Join a community that helps each other grow and succeed',
   },
   {
-    icon: '/path-to-centres-icon.png',
-    title: 'Authentic Certificates',
+    icon: '/assets/authentic.png',
+    title: 'Certificates',
     description:
       'Receive credible and valuable certificates that enhance your professional profile',
   },
@@ -45,21 +45,27 @@ const features = [
 
 function Features() {
   return (
-    <div className='flex items-center justify-between bg-white py-12'>
-      {features.map((feature, index) => (
-        <div key={index} className='mx-4 text-center'>
-          <div className='mb-4'>
-            <Image
-              src={feature.icon}
-              alt={feature.title}
-              width={50}
-              height={50}
-            />
-          </div>
-          <h3 className='text-sm font-bold text-gray-800'>{feature.title}</h3>
-          <p className='text-sm text-gray-600'>{feature.description}</p>
+    <div className='bg-gray-100 py-12'>
+      <div className='container mx-auto px-4'>
+        <div className='grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7'>
+          {features.map((feature, index) => (
+            <div key={index} className='flex flex-col items-center text-center'>
+              <div className='mb-3'>
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={70}
+                  height={70}
+                />
+              </div>
+              <h3 className='text-md mb-2 font-black text-gray-800'>
+                {feature.title}
+              </h3>
+              <p className='text-sm text-gray-600'>{feature.description}</p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

@@ -47,7 +47,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <div className='container mx-auto my-8'>
+    <div className='container mx-auto my-8 mb-20 py-20 xl:py-52'>
       <h2 className='mb-4 text-center text-4xl font-black sm:text-5xl'>
         Our Clients
       </h2>
@@ -71,7 +71,7 @@ export default function Clients() {
                 />
               </div>
               <div className='absolute inset-0 flex items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]'>
-                <div className='bg-white/40 text-black '>{client.name}</div>
+                <div className='bg-gray-100 text-black '>{client.name}</div>
               </div>
             </div>
           </div>

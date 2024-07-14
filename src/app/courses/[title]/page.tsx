@@ -172,9 +172,9 @@ export default async function Page({ params }: { params: { title: string } }) {
       ) : (
         <p>Course not found</p>
       )}
-      <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
+      <div className='mt-20 h-1/2 w-full text-wrap text-left'>
         <h1 className='mb-2 text-xs font-bold'>Highlights</h1>
-        <div className='flex flex-wrap items-center justify-start break-normal text-justify text-xs text-gray-600'>
+        <div className='mb-10 flex flex-wrap items-center justify-start break-normal text-justify text-xs text-gray-600'>
           {course?.keywords.map((keyword, index) => (
             <p key={keyword} className='text-xs'>
               {keyword}
