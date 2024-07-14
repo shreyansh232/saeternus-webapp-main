@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { Testimonials } from '@/components/Testimonials';
-import Clients from '@/components/Clients';
+import { Clients } from '@/components/Clients';
 import Features from '@/components/Features';
 
 import MetricsCard from '@/components/ui/metrics-card';
@@ -38,7 +38,6 @@ export default function Home() {
       <div>
         <Features />
       </div>
-
       <div className='flex flex-col items-center bg-gray-100 p-10 sm:flex-row sm:pt-40 xl:p-60'>
         <div className='sm:flex-1'>
           <h1 className='text-4xl font-bold'>
