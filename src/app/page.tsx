@@ -12,7 +12,7 @@ import MetricsCard from '@/components/ui/metrics-card';
 export default function Home() {
   return (
     <>
-      <MaxWidthWrapper className='mb-96 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
+      <MaxWidthWrapper className='mb-36 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
         <h1 className='text-5xl font-bold md:text-6xl xl:w-11/12 xl:text-8xl'>
           Transform your career with
           <span className='text-primary'> Saeternus</span>

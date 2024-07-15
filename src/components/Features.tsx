@@ -37,7 +37,7 @@ const features = [
   },
   {
     icon: '/assets/authentic.png',
-    title: 'Certificates',
+    title: 'Certification',
     description:
       'Receive credible and valuable certificates that enhance your professional profile',
   },
@@ -61,7 +61,7 @@ function Features() {
               <h3 className='text-md mb-2 font-black text-gray-800'>
                 {feature.title}
               </h3>
-              <p className='text-sm text-gray-600'>{feature.description}</p>
+              <p className='text-xs text-gray-600'>{feature.description}</p>
             </div>
           ))}
         </div>

@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     to: process.env.MY_EMAIL,
     subject: `Saeternus form details for ${name}`,
     cc: email,
-    text: `${name}, ${number}, ${email}, ${message}`,
+    text: `Name: ${name}\nNumber: ${number}\nEmail: ${email}\nMessage: ${message}`,
   };
 
   const sendMailPromise = () =>
@@ -34,8 +34,19 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: 'Submitted' });
+    return NextResponse.json({
+      status: 'success',
+      message: 'Form submitted successfully. We will get back to you shortly.',
+    });
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+    return NextResponse.json(
+      {
+        status: 'error',
+        message:
+          'There was an error submitting the form. Please try again later.',
+        error: err,
+      },
+      { status: 500 }
+    );
   }
 }

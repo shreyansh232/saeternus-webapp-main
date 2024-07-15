@@ -54,7 +54,7 @@ export default function Clients() {
       <p className='mb-20 text-center font-normal xl:text-lg'>
         We are trusted by professionals from leading organizations
       </p>
-      <div className='grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-6 xl:gap-20'>
+      <div className='grid grid-cols-2 gap-10 bg-gray-100 md:grid-cols-3 lg:grid-cols-6 xl:gap-20'>
         {clients.map((client) => (
           <div
             key={client.name}
