@@ -14,9 +14,9 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
-    subject: `Saeternus form details for ${name}`,
+    from: 'noreply@saeternus.com',
+    to: 'hello@saeternus.com',
+    subject: `Query from ${name}`,
     cc: email,
     text: `Name: ${name}\nNumber: ${number}\nEmail: ${email}\nMessage: ${message}`,
   };
