@@ -1,16 +1,18 @@
 export interface CourseInfo {
   courseId: string;
   title: string;
-  description: string;
+  header: string;
+  // description: string;
   image?: string;
   tags?: string[];
-  prevPrice?: number;
-  currentPrice: number;
+  prevPrice?: string;
+  currentPrice: string;
 }
 
 export interface Lesson {
   title: string;
   description: string;
+  day: string;
 }
 
 export interface courseMeta {
@@ -25,11 +27,15 @@ export interface CourseDetails {
   description: string;
   image?: string;
   tags?: string[];
-  prevPrice?: number;
-  currentPrice: number;
+  prevPrice?: string;
+  currentPrice: string;
+  whatsapp: string;
+  contact: string;
+  formLink: string;
   lessons: Lesson[];
   relatedCourses?: string[];
   startDate: string;
   whatYouWillLearn: string[];
   courseMeta: courseMeta[];
+  keywords: string[];
 }

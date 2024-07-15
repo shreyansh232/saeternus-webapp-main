@@ -25,6 +25,9 @@ module.exports = {
       },
     },
     extend: {
+      textAlign: {
+        justify: 'justify',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

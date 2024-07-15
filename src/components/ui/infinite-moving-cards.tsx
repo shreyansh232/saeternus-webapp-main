@@ -2,16 +2,20 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "normal",
   pauseOnHover = true,
   className,
 }: {
   items: {
-    quote: string;
+    image: string; 
+    quote: any;
     name: string;
     title: string;
   }[];
@@ -73,7 +77,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
         className
       )}
     >
@@ -85,32 +89,42 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        
+        {items.map((item) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] relative"
+            className="w-[300px] max-w-full rounded-xl border flex-shrink-0 border-gray-300 px-8 py-6 md:w-[300px] relative shadow-lg"
             style={{
               background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                "linear-gradient(180deg, var(--gray-50), var(--gray-50)",
             }}
             key={item.name}
           >
             <blockquote className="mb-12">
+            <FontAwesomeIcon icon={faQuoteLeft} className="text-primary text-2xl mb-4" />
+
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              <span className="relative z-20 text-sm leading-[1.6] text-black font-normal">
                 {item.quote}
               </span>
-              <div className="absolute bottom-0 mb-4 flex flex-col gap-1">
-                
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+
+              <div className="absolute bottom-0 mb-4 flex items-center gap-2">
+               <Image
+                src={item.image}
+                alt={item.name}
+                width={40} 
+                height={40} 
+                className="rounded-full" />
+                <div className="flex flex-col">
+                  <span className="text-md leading-[1.6] text-primary font-normal">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className="text-xs leading-[1.6] text-gray-700 font-normal">
                     {item.title}
                   </span>
-                
+                </div>
               </div>
             </blockquote>
           </li>
