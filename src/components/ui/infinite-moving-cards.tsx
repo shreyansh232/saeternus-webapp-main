@@ -111,14 +111,18 @@ export const InfiniteMovingCards = ({
               </span>
 
               <div className="absolute bottom-0 mb-4 flex items-center gap-2">
+              <div className="image-container">
+
                <Image
-                src={item.image}
-                alt={item.name}
-                width={40} 
-                height={40} 
-                className="rounded-full" />
+                 src={item.image}
+                 alt={item.name}
+                 width={40}
+                 height={40}
+                 className="image-rounded border border-primary"
+                />
+              </div>
                 <div className="flex flex-col">
-                  <span className="text-md leading-[1.6] text-primary font-normal">
+                  <span className="text-md leading-[1.6] text-primary font-normal object-contain">
                     {item.name}
                   </span>
                   <span className="text-xs leading-[1.6] text-gray-700 font-normal">

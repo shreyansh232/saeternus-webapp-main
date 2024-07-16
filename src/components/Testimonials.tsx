@@ -17,7 +17,7 @@ export function Testimonials() {
 
 const testimonials = [
   {
-    image: '/images/images.png',
+    image: '/images/IMG_20230214_212404_240 - ROMA SIDDIQUI.jpg',
     quote: (
       <div>
         Attending this program was an awesome experience. I learned a lot from
@@ -35,7 +35,7 @@ const testimonials = [
     title: 'Project Assistant',
   },
   {
-    image: '/images/images.png',
+    image: '/images/Rajesh_Raman.jpeg',
     quote: (
       <div>
         The instructor was very methodological and patient and made learning
@@ -47,7 +47,7 @@ const testimonials = [
     title: 'Additional Professor',
   },
   {
-    image: '/images/images.png',
+    image: '/images/MY PHOTO - Sudha Rawat.jpeg',
     quote: (
       <div>
         The SPSS course was transformative. The instructor simplified complex
@@ -64,7 +64,7 @@ const testimonials = [
     title: 'Doctoral Candidate',
   },
   {
-    image: '/images/images.png',
+    image: '/images/photo_2024-03-04_19-58-43 - Kavita Verma.jpg',
     quote: (
       <div>
         The classes were very well planned and modified as per the needs of the
@@ -79,7 +79,7 @@ const testimonials = [
     title: 'Research Scholar',
   },
   {
-    image: '/images/images.png',
+    image: '/images/E29C3D62-1BD4-4174-ACBE-8218F724E85C - Preeti Mishra.JPG',
     quote: (
       <div>
         The overall experience was really overwhelming. Teachers were very
@@ -95,7 +95,7 @@ const testimonials = [
     title: 'Assistant Professor',
   },
   {
-    image: '/images/images.png',
+    image: '/images/PHOTO-2021-01-24-19-07-28 (1) - Rati Prabha.jpg',
     quote: (
       <div>
         The instructor was very methodological, and her structured approach for
@@ -110,7 +110,7 @@ const testimonials = [
     title: 'Associate Professor',
   },
   {
-    image: '/images/images.png',
+    image: '/images/PIC - PRAKARSH SRIVASTAVA.jpg',
     quote: (
       <div>
         I am impressed by the{' '}
