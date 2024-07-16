@@ -17,7 +17,7 @@ export function Testimonials() {
 
 const testimonials = [
   {
-    image: '/images/IMG_20230214_212404_240 - ROMA SIDDIQUI.jpg',
+    image: '/images/IMG_20230214_212404_240 - ROMA SIDDIQUI.webp',
     quote: (
       <div>
         Attending this program was an awesome experience. I learned a lot from
@@ -35,7 +35,7 @@ const testimonials = [
     title: 'Project Assistant',
   },
   {
-    image: '/images/Rajesh_Raman.jpeg',
+    image: '/images/SAVE_20200218_143836-03 - Rajesh Raman.jpeg',
     quote: (
       <div>
         The instructor was very methodological and patient and made learning
