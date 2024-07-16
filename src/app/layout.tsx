@@ -7,6 +7,7 @@ import { satoshi } from '@/utils/customfonts';
 import { GoogleTagManager } from '@next/third-parties/google';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+const description = 'Innovating for your success';
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${baseURL}`),
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
     default: 'Saeternus',
     template: '%s - Saeternus',
   },
-  description: 'Innovating for your success',
+  description: description,
   openGraph: {
     title: 'Saeternus',
-    description: 'Innovating for your success',
+    description: description,
     type: 'website',
     locale: 'en_US',
     url: `${baseURL}`,

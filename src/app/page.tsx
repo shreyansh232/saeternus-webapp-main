@@ -61,7 +61,7 @@ export default function Home() {
           <MetricsCard />
         </div>
       </div>
-      <div className='mb-20 h-1/2 w-full bg-gray-100'>
+      <div className='mb-20 h-1/2 w-full'>
         <Clients />
       </div>
       {/* Testimonials section */}

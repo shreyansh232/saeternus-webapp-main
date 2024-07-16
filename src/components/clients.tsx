@@ -54,7 +54,7 @@ export default function Clients() {
       <p className='mb-20 text-center font-normal xl:text-lg'>
         We are trusted by professionals from leading organizations
       </p>
-      <div className='grid grid-cols-2 gap-10 bg-gray-100 md:grid-cols-3 lg:grid-cols-6 xl:gap-20'>
+      <div className='grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-6 xl:gap-20'>
         {clients.map((client) => (
           <div
             key={client.name}
@@ -71,7 +71,7 @@ export default function Clients() {
                 />
               </div>
               <div className='absolute inset-0 flex items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]'>
-                <div className='bg-gray-100 text-black '>{client.name}</div>
+                <div className='text-black '>{client.name}</div>
               </div>
             </div>
           </div>
