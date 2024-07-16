@@ -19,6 +19,7 @@ export type FormData = {
   name: string;
   email: string;
   number: string;
+  subject: string;
   message: string;
 };
 
@@ -37,10 +38,10 @@ const ContactPage: FC = () => {
             <div className='mb-20'>
               <h1 className='text-7xl font-extrabold'>Let&apos;s Talk</h1>
               <p className='text-md mt-10 font-normal text-gray-600'>
-                Your success is our success.{' '}
+                We are committed to delivering{' '}
                 <span className='text-primary'>
-                  We are committed to delivering innovative solutions and
-                  exceptional service to help you achieve your goals.
+                  innovative solutions and exceptional service to help you
+                  achieve your goals.
                 </span>{' '}
                 Let us help you turn your vision into a reality.{' '}
               </p>
@@ -175,6 +176,22 @@ const ContactPage: FC = () => {
                     }}
                     required
                     {...register('number', { required: true })}
+                  />
+                </div>
+                <div className='grid w-full items-center gap-1.5'>
+                  <label
+                    className='text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
+                    htmlFor='subject'
+                  >
+                    Subject <span className='text-red-500'>*</span>
+                  </label>
+                  <input
+                    className='flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900'
+                    type='text'
+                    id='subject'
+                    placeholder='Subject'
+                    required
+                    {...register('subject', { required: true })}
                   />
                 </div>
                 <div className='grid w-full  items-center gap-1.5'>

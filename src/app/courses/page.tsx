@@ -4,8 +4,8 @@ import CourseCard from '@/components/CourseCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { getAllCourses } from '@/api/course/course';
 import { Metadata } from 'next';
-import { getSeoKeywords } from '@/api/keywords/keywords';
-import { formatKeywords } from '@/api/keywords/keywords';
+import { getSeoKeywords, formatKeywords } from '@/api/keywords/keywords';
+import { motion } from 'framer-motion';
 
 async function generateMetadata(): Promise<Metadata> {
   return {
@@ -28,6 +28,11 @@ export default function Course() {
   const filteredCourses = courses.filter((course) =>
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const animationVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <div>
@@ -72,17 +77,24 @@ export default function Course() {
           </div>
         </form>
         <div className='flex flex-wrap items-center justify-center gap-5 xl:w-[1250px]'>
-          {filteredCourses.map((course) => (
-            <CourseCard
+          {filteredCourses.map((course, index) => (
+            <motion.div
               key={course.courseId}
-              courseId={course.courseId}
-              title={course.title}
-              header={course.header}
-              image={course.image}
-              tags={course.tags}
-              prevPrice={course.prevPrice}
-              currentPrice={course.currentPrice}
-            />
+              initial='hidden'
+              animate='visible'
+              variants={animationVariants}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <CourseCard
+                courseId={course.courseId}
+                title={course.title}
+                header={course.header}
+                image={course.image}
+                tags={course.tags}
+                prevPrice={course.prevPrice}
+                currentPrice={course.currentPrice}
+              />
+            </motion.div>
           ))}
         </div>
         <div className='mt-20 w-full text-left'>

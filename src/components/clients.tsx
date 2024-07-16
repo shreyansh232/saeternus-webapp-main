@@ -71,7 +71,7 @@ export default function Clients() {
                 />
               </div>
               <div className='absolute inset-0 flex items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]'>
-                <div className='text-black '>{client.name}</div>
+                <div className='text-black'>{client.name}</div>
               </div>
             </div>
           </div>

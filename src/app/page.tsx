@@ -8,6 +8,7 @@ import { Testimonials } from '@/components/Testimonials';
 import Clients from '@/components/clients';
 import Features from '@/components/Features';
 import MetricsCard from '@/components/ui/metrics-card';
+import { Faqs } from '@/components/FAQs';
 
 export default function Home() {
   return (
@@ -76,6 +77,9 @@ export default function Home() {
         </div>
       </div>
       <Testimonials />
+      <MaxWidthWrapper className='mb-20'>
+        <Faqs />
+      </MaxWidthWrapper>
     </>
   );
 }
