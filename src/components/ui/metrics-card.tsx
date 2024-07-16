@@ -11,7 +11,7 @@ const metrics = [
 
 const MetricsSection: React.FC = () => {
   return (
-    <div className="container mt-10 mx-auto px-0">
+    <div className="container mx-auto px-0">
       <div className="flex gap-1 sm:gap-4">
         <div className="flex flex-col">
           {metrics.slice(0, 3).map((metric, index) => (

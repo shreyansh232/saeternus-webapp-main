@@ -47,7 +47,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <div className='container mx-auto my-8 mb-20 py-20 xl:py-52'>
+    <div className='container mx-auto mb-20 py-20'>
       <h2 className='mb-4 text-center text-4xl font-black sm:text-5xl'>
         Our Clients
       </h2>

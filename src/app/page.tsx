@@ -68,7 +68,7 @@ export default function Home() {
       <motion.div initial='hidden' animate='visible' variants={fadeInUp}>
         <Features />
       </motion.div>
-      <div className='flex flex-col items-center bg-white p-10 sm:flex-row sm:pt-40 xl:p-60'>
+      <div className='flex flex-col items-center bg-white p-10 sm:flex-row xl:px-40'>
         <motion.div
           className='sm:flex-1'
           initial='hidden'
@@ -103,7 +103,7 @@ export default function Home() {
         </motion.div>
       </div>
       <motion.div
-        className='mb-20 h-1/2 w-full'
+        className='mb-20 h-1/5 w-full'
         initial='hidden'
         animate='visible'
         variants={fadeInUp}
@@ -112,7 +112,7 @@ export default function Home() {
       </motion.div>
       {/* Testimonials section */}
       <motion.div
-        className='mx-auto mb-10 max-w-5xl items-center justify-center sm:mt-56'
+        className='mx-auto mb-10 max-w-5xl items-center justify-center '
         initial='hidden'
         animate='visible'
         variants={fadeInUp}
