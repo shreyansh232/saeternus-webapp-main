@@ -87,7 +87,7 @@ const detailedCourses: CourseDetails[] = [
     currentPrice: '₹3,540',
     whatsapp: 'https://chat.whatsapp.com/FRmZTHwsDLACdxUAQOg3GE',
     contact: '9450906849',
-    formLink: 'https://forms.gle/EMas47VcUmrUctK78',
+    formLink: 'https://forms.gle/2KLbzK9qmT7mr59j7',
     lessons: [
       {
         title: 'Introduction to GIS',

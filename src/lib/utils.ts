@@ -6,5 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function slugify(title: string): string {
-  return title.toLowerCase().replace(/\s+/g, '-');
+  return title.toLowerCase().replace(/\s+/g, '-').replace(/-+/g, '-');
 }

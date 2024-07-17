@@ -82,7 +82,7 @@ export function Services() {
                 size: 'lg',
                 className: 'mt-5',
               })}
-              href='/contact'
+              href='/contact-us'
             >
               Newsletter
             </Link>

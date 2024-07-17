@@ -99,7 +99,7 @@ function Footer() {
                     </li>
                     <li>
                       <Link
-                        href='/contact'
+                        href='/contact-us'
                         className={cn('text-black hover:text-primary')}
                       >
                         Contact Us

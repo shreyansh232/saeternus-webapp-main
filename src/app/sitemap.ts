@@ -25,7 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: 'https://www.saeternus.com/contact/',
+      url: 'https://www.saeternus.com/contact-us/',
       lastModified: new Date(),
       priority: 0.8,
     },
