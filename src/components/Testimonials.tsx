@@ -18,6 +18,7 @@ export function Testimonials() {
 const testimonials = [
   {
     image: '/images/Roma_Siddiqui.jpg',
+    image: '/images/Roma_Siddiqui.jpg',
     quote: (
       <div>
         Attending this program was an awesome experience. I learned a lot from

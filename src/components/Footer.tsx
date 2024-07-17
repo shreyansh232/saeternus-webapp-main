@@ -2,30 +2,30 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebook,
-  faLinkedin,
-  faXTwitter,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
+// import {
+//   faFacebook,
+//   faLinkedin,
+//   faXTwitter,
+//   faInstagram,
+// } from '@fortawesome/free-brands-svg-icons';
 import { cn } from '@/lib/utils';
 import MaxWidthWrapper from './MaxWidthWrapper';
 
 const socialLinks = [
-  { href: 'https://x.com/saeternus_', icon: faXTwitter, label: 'Twitter' },
+  // { href: 'https://x.com/saeternus_', icon: faXTwitter, label: 'Twitter' },
   {
     href: 'https://www.instagram.com/saeternus_',
-    icon: faInstagram,
+    // icon: faInstagram,
     label: 'Instagram',
   },
   {
     href: 'https://www.linkedin.com/company/saeternus/',
-    icon: faLinkedin,
+    // icon: faLinkedin,
     label: 'LinkedIn',
   },
   {
     href: 'https://www.facebook.com/saeternus.india',
-    icon: faFacebook,
+    // icon: faFacebook,
     label: 'Facebook',
   },
 ];
