@@ -14,6 +14,9 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    fontFamily: {
+      satoshi: ['var(--font-satoshi)'],
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -22,6 +25,9 @@ module.exports = {
       },
     },
     extend: {
+      textAlign: {
+        justify: 'justify',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

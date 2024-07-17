@@ -72,6 +72,7 @@ const WideScreenNav: React.FC<NavProps> = ({ navigations }) => {
             buttonVariants({
               variant: 'ghost',
               size: 'sm',
+              className: 'text-base',
             }),
             'hover:text-primary',
             {
