@@ -3,7 +3,6 @@ import { slugify } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import {
   Card,
-  // CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -22,6 +21,7 @@ const CourseCard: React.FC<CourseInfo> = ({
   tags,
   prevPrice,
   currentPrice,
+  path,
 }) => {
   return (
     <Card className='flex w-[340px] flex-col justify-between overflow-hidden shadow-md transition-all duration-500 lg:h-[300px] lg:w-[400px] lg:hover:scale-105 lg:hover:border-2 lg:hover:border-primary lg:hover:shadow-lg'>
@@ -58,7 +58,7 @@ const CourseCard: React.FC<CourseInfo> = ({
               size: 'lg',
               className: 'mt-5',
             })}
-            href={`/courses/${slugify(header)}`}
+            href={`/courses/${slugify(path)}`}
           >
             View course
           </Link>

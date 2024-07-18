@@ -14,6 +14,7 @@ const courses: CourseInfo[] = [
     tags: ['GIS', 'Mapping'],
     prevPrice: '₹7,000',
     currentPrice: '₹3,540',
+    path: 'gis',
   },
   {
     courseId: '2',
@@ -24,6 +25,7 @@ const courses: CourseInfo[] = [
     tags: ['SPSS', 'Statistics', 'Analysis'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
+    path: 'spss',
   },
   {
     courseId: '3',
@@ -33,6 +35,7 @@ const courses: CourseInfo[] = [
     tags: ['Python', 'Analysis', 'Visualization'],
     prevPrice: '₹7,375',
     currentPrice: '₹2,950',
+    path: 'python-data-analysis-visualisation',
   },
   {
     courseId: '4',
@@ -42,6 +45,7 @@ const courses: CourseInfo[] = [
     tags: ['Remote Sensing', 'Observation'],
     prevPrice: '₹10,700',
     currentPrice: '₹2,990',
+    path: 'remote-sensing',
   },
   {
     courseId: '5',
@@ -52,6 +56,7 @@ const courses: CourseInfo[] = [
     tags: ['Research Methodology', 'Writing'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
+    path: 'research-methodology-research-design-and-writing',
   },
   {
     courseId: '6',
@@ -62,6 +67,7 @@ const courses: CourseInfo[] = [
     tags: ['Research Methodology', 'Analysis'],
     prevPrice: '₹8,200',
     currentPrice: '₹2,950',
+    path: 'research-methodology-data-collection-and-analysis',
   },
   {
     courseId: '7',
@@ -71,6 +77,7 @@ const courses: CourseInfo[] = [
     tags: ['Remote Sensing', 'Project'],
     prevPrice: '₹9,600',
     currentPrice: '₹2,596',
+    path: 'remote-sensing-gis-project',
   },
 ];
 
@@ -87,7 +94,8 @@ const detailedCourses: CourseDetails[] = [
     currentPrice: '₹3,540',
     whatsapp: 'https://chat.whatsapp.com/FRmZTHwsDLACdxUAQOg3GE',
     contact: '9450906849',
-    formLink: 'https://forms.gle/2KLbzK9qmT7mr59j7',
+    formLink: 'https://forms.gle/EMas47VcUmrUctK78',
+    path: 'gis',
     lessons: [
       {
         title: 'Introduction to GIS',
@@ -274,6 +282,7 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/FdbSxmUWe4yJTVNQvV1zZ2',
     contact: '9450906849',
     formLink: 'https://forms.gle/EMas47VcUmrUctK78',
+    path: 'spss',
     lessons: [
       {
         title: 'Introduction to Statistics & SPSS',
@@ -496,6 +505,8 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/HkrLN4L6LdaGuhj1TqkYWT',
     contact: '9450906849',
     formLink: 'https://forms.gle/GnXUAxDczULkvQQF6',
+    path: 'python-data-analysis-visualisation',
+
     lessons: [
       {
         title:
@@ -665,6 +676,7 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/C1JrWWEMrbwBp785QnFNVj',
     contact: '9450906849',
     formLink: 'https://forms.gle/4XCdgsjLha6iwnga8',
+    path: 'remote-sensing',
     lessons: [
       {
         title: 'Introduction to Remote Sensing',
@@ -857,6 +869,7 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/HLFjC7Usbs12NDdY0pR1fV',
     contact: '9450906849',
     formLink: 'https://forms.gle/EcBkBU18eM3o96S38',
+    path: 'research-methodology-research-design-and-writing',
     lessons: [
       {
         title: 'Fundamentals of Research',
@@ -1063,6 +1076,7 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/HLFjC7Usbs12NDdY0pR1fV',
     contact: '9450906849',
     formLink: 'https://forms.gle/waNVN81LwwTR5Mwh8',
+    path: 'research-methodology-data-collection-and-analysis',
     lessons: [
       {
         title: 'Qualities of Researcher',
@@ -1230,6 +1244,7 @@ const detailedCourses: CourseDetails[] = [
     whatsapp: 'https://chat.whatsapp.com/CxMeIeJcX5v4NDtE0Inld2',
     contact: '9450906849',
     formLink: 'https://forms.gle/jCB9H6QSXfTuEzSj7',
+    path: 'remote-sensing-gis-project',
     lessons: [
       {
         title: 'Topic Discussion',
@@ -1390,5 +1405,9 @@ export function getCourseByTitle(title: string): CourseDetails | undefined {
   const course = detailedCourses.find(
     (course) => slugify(course.title) === slugify(title)
   );
+  return course;
+}
+export function getCourseByPath(path: string): CourseDetails | undefined {
+  const course = detailedCourses.find((course) => course.path === path);
   return course;
 }

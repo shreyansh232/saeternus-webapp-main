@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getCourseByTitle } from '@/api/course/course';
+import { getCourseByTitle, getCourseByPath } from '@/api/course/course';
 import { CourseDetails } from '@/api/course/course.types';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Badge } from '@/components/ui/badge';
@@ -36,7 +36,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${course.title} - Saeternus`,
       description: course.description,
-      url: `${baseURL}/courses/${slugify(course.title)}`,
+      url: `${baseURL}/courses/${slugify(course.path)}`,
       images: [
         {
           url: course.image || `${baseURL}/android-chrome-192x192.png`,
@@ -46,9 +46,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({ params }: { params: { title: string } }) {
-  const course: CourseDetails | undefined = await getCourseByTitle(
-    params.title
+export default async function Page({ params }: { params: { path: string } }) {
+  const course: CourseDetails | undefined = await getCourseByPath(
+    slugify(params.path)
   );
 
   return (

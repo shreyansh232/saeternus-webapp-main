@@ -93,6 +93,7 @@ export default function Course() {
                 tags={course.tags}
                 prevPrice={course.prevPrice}
                 currentPrice={course.currentPrice}
+                path={course.path}
               />
             </motion.div>
           ))}

@@ -7,6 +7,7 @@ export interface CourseInfo {
   tags?: string[];
   prevPrice?: string;
   currentPrice: string;
+  path: string;
 }
 
 export interface Lesson {
@@ -38,4 +39,5 @@ export interface CourseDetails {
   whatYouWillLearn: string[];
   courseMeta: courseMeta[];
   keywords: string[];
+  path: string;
 }
