@@ -200,7 +200,7 @@ const detailedCourses: CourseDetails[] = [
     courseMeta: [
       {
         title: 'Duration',
-        description: '6 weeks',
+        description: '8 weeks',
         image: '/assets/react-duration.png',
       },
       {
@@ -218,11 +218,11 @@ const detailedCourses: CourseDetails[] = [
         description: 'English and Hindi',
         image: '/assets/instructor.png',
       },
-      // {
-      //   title: 'Instructor',
-      //   description: 'John Doe',
-      //   image: '/assets/instructor.png',
-      // },
+      {
+        title: 'Instructor',
+        description: 'Leading industry experts',
+        image: '/assets/instructor.png',
+      },
       {
         title: 'Prerequisites',
         description: 'No prerequisites required',
@@ -390,7 +390,7 @@ const detailedCourses: CourseDetails[] = [
     courseMeta: [
       {
         title: 'Duration',
-        description: '6 weeks',
+        description: '8 weeks',
         image: '/assets/node-duration.png',
       },
       {
@@ -410,7 +410,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'Jane Smith',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
@@ -620,7 +620,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'John Doe',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
@@ -800,7 +800,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'John Doe',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
@@ -974,7 +974,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'John Doe',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
@@ -1177,7 +1177,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'John Doe',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
@@ -1327,7 +1327,7 @@ const detailedCourses: CourseDetails[] = [
       },
       {
         title: 'Instructor',
-        description: 'John Doe',
+        description: 'Leading industry experts',
         image: '/assets/instructor.png',
       },
       {
