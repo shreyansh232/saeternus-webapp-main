@@ -19,9 +19,9 @@ const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 export async function generateMetadata({
   params,
 }: {
-  params: { title: string };
+  params: { path: string };
 }): Promise<Metadata> {
-  const course = await getCourseByTitle(params.title);
+  const course = await getCourseByPath(params.path);
 
   if (!course) {
     return {
