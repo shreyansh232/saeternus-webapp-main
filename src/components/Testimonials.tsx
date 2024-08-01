@@ -37,6 +37,7 @@ const testimonials = [
   },
   {
     image: '/images/Rajesh_Raman.jpeg',
+    image: '/images/Rajesh_Raman.jpeg',
     quote: (
       <div>
         The instructor was very methodological and patient and made learning
@@ -48,6 +49,7 @@ const testimonials = [
     title: 'Additional Professor',
   },
   {
+    image: '/images/Sudha_Rawat.jpeg',
     image: '/images/Sudha_Rawat.jpeg',
     quote: (
       <div>
@@ -65,6 +67,7 @@ const testimonials = [
     title: 'Doctoral Candidate',
   },
   {
+    image: '/images/Kavita_Verma.jpg',
     image: '/images/Kavita_Verma.jpg',
     quote: (
       <div>
@@ -97,6 +100,7 @@ const testimonials = [
   },
   {
     image: '/images/Rati_Prabha.jpg',
+    image: '/images/Rati_Prabha.jpg',
     quote: (
       <div>
         The instructor was very methodological, and her structured approach for
@@ -111,6 +115,7 @@ const testimonials = [
     title: 'Associate Professor',
   },
   {
+    image: '/images/Prakarsh_Srivastava.jpg',
     image: '/images/Prakarsh_Srivastava.jpg',
     quote: (
       <div>
