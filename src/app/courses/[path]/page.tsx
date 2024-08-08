@@ -39,7 +39,7 @@ export async function generateMetadata({
       url: `${baseURL}/courses/${slugify(course.path)}`,
       images: [
         {
-          url: course.image || `${baseURL}/android-chrome-192x192.png`,
+          url: `${baseURL}/android-chrome-192x192.png`,
         },
       ],
     },
