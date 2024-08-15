@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AdmissionFeatures from '@/components/AdmissionFeatures';
 import AdmissionHero from '@/components/AdmissionHero';
+import ContactUsSection from '@/components/servicesContactNow';
+import ServicesSection from '@/components/servicesSection';
+import TestimonialSection from '@/components/servicesTestimonial';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -106,6 +109,9 @@ function Page() {
         </div>
       </div>
       <AdmissionFeatures />
+      <ServicesSection />
+      <TestimonialSection />
+      <ContactUsSection />
     </div>
   );
 }
