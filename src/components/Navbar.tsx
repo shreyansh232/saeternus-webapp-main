@@ -12,6 +12,11 @@ export interface Navigation {
 
 const navigations: Navigation[] = [
   { path: '/courses', name: 'Courses', authNeeded: true },
+  {
+    path: '/admissions-consulting',
+    name: 'Admissions Consulting',
+    authNeeded: true,
+  },
   { path: '/about', name: 'About', authNeeded: true },
   { path: '/contact-us', name: 'Contact', authNeeded: true },
 ];
