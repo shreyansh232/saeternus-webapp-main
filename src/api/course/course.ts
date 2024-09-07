@@ -92,7 +92,7 @@ const detailedCourses: CourseDetails[] = [
     tags: ['GIS', 'Geospatial', 'Mapping'],
     prevPrice: '₹7,000',
     currentPrice: '₹3,540',
-    whatsapp: 'https://chat.whatsapp.com/FRmZTHwsDLACdxUAQOg3GE',
+    whatsapp: 'https://chat.whatsapp.com/ItD3hpp9F7O5BfU8LA8s6T',
     contact: '9450906849',
     formLink: 'https://forms.gle/2KLbzK9qmT7mr59j7',
     path: 'gis',
@@ -378,7 +378,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: '2024-09-02',
+    startDate: '2024-09-23',
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -589,7 +589,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-08',
+    startDate: '2024-09-28',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -769,7 +769,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-11',
+    startDate: '2024-09-25',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
