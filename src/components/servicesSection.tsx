@@ -2,17 +2,24 @@
 
 import React from 'react';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
-import { Target, Briefcase, Star, Globe, UserRoundPen } from 'lucide-react';
+import {
+  NotebookText,
+  Plane,
+  Briefcase,
+  Star,
+  Globe,
+  UserRoundPen,
+} from 'lucide-react';
 
 const services = [
   {
-    icon: <Target className='h-10 w-10' />,
+    icon: <UserRoundPen className='h-10 w-10' />,
     title: 'Profile Evaluation',
     description:
       'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
   },
   {
-    icon: <Briefcase className='h-10 w-10' />,
+    icon: <NotebookText className='h-10 w-10' />,
     title: 'College Shortlisting',
     description:
       "Customizing your essay to align with the admission committee's mindset for each college. Do cillum culpa labore laboris incididunt velit ipsum.",
@@ -24,7 +31,7 @@ const services = [
       'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
   },
   {
-    icon: <Globe className='h-10 w-10' />,
+    icon: <Plane className='h-10 w-10' />,
     title: 'Visa Interviews',
     description:
       'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
