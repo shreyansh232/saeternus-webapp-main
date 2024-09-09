@@ -51,14 +51,14 @@ const TestimonialCard: React.FC<Testimonial> = ({
         loading='lazy'
         src={imageSrc}
         alt={`${name}'s profile`}
-        className='aspect-square w-[50px] md:w-[70px] shrink-0 rounded-full'
+        className='aspect-square w-[50px] shrink-0 rounded-full md:w-[70px]'
       />
     </div>
     <p className='mt-4 self-end text-center text-base font-light italic text-black'>
       &ldquo;{content}&rdquo;
     </p>
-    <h4 className='mt-4 text-base md:text-lg text-primary'>{name}</h4>
-    <p className='text-center text-base md:text-lg text-primary'>{degree}</p>
+    <h4 className='mt-4 text-base text-primary md:text-lg'>{name}</h4>
+    <p className='text-center text-base text-primary md:text-lg'>{degree}</p>
   </article>
 );
 
@@ -93,7 +93,7 @@ const TestimonialSection: React.FC = () => {
   }, []);
 
   return (
-    <section className='mx-4 my-10 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 flex flex-col items-center rounded-3xl bg-white p-5 md:p-10 text-xl font-semibold shadow-[0px_4px_4px_rgba(0,0,0,0.25)]'>
+    <section className='mx-4 my-10 flex flex-col items-center rounded-3xl bg-white p-5 text-xl font-semibold shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sm:mx-8 md:mx-16 md:p-10 lg:mx-32 xl:mx-64'>
       <div className='w-full max-w-[500px]'>
         <div className='flex items-center justify-between gap-5 pb-9 pt-16 '>
           <div
@@ -104,11 +104,11 @@ const TestimonialSection: React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className='flex justify-center space-x-2 mt-4'>
+        <div className='mt-4 flex justify-center space-x-2'>
           {testimonials.map((_, index) => (
             <span
               key={index}
-              className={`mb-4 block h-3 w-3 rounded-full cursor-pointer ${currentIndex === index ? 'bg-primary' : 'bg-gray-300'}`}
+              className={`mb-4 block h-3 w-3 cursor-pointer rounded-full ${currentIndex === index ? 'bg-primary' : 'bg-gray-300'}`}
               onClick={() => handleDotClick(index)}
             />
           ))}
