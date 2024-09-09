@@ -69,7 +69,11 @@
 }
 
 .gradient-overlay {
-  background: linear-gradient(to right, rgba(79, 14, 230, 0.702), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(
+    to right,
+    rgba(79, 14, 230, 0.702),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 .frosted-glass {
   /* background: rgba(255, 255, 255, 0.1);  */
