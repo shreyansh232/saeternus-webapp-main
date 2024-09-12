@@ -12,14 +12,14 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    imageSrc: '/images/placeholder.png',
+    imageSrc: '/images/Prakarsh_Srivastava.jpg',
     name: 'Saurabh Parulekar',
     degree: 'MS in Electrical Engineering',
     content: 'Suggest Yocket Premium for students who aspire to study MS',
     review: 'review content',
   },
   {
-    imageSrc: '/images/placeholder.png',
+    imageSrc: '/images/Sudha_Rawat.jpeg',
     name: 'Aditi Sharma',
     degree: 'MBA in Finance',
     content:
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     review: 'review content',
   },
   {
-    imageSrc: '/images/placeholder.png',
+    imageSrc: '/images/Rajesh_Raman.jpeg',
     name: 'Rahul Mehta',
     degree: 'PhD in Computer Science',
     content:
@@ -51,7 +51,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
         loading='lazy'
         src={imageSrc}
         alt={`${name}'s profile`}
-        className='aspect-square w-[50px] shrink-0 rounded-full md:w-[70px]'
+        className='aspect-square w-[70px] shrink-0 rounded-full md:w-[90px]'
       />
     </div>
     <p className='mt-4 self-end text-center text-base font-light italic text-black'>
@@ -93,11 +93,11 @@ const TestimonialSection: React.FC = () => {
   }, []);
 
   return (
-    <section className='mx-4 my-10 flex flex-col items-center rounded-3xl bg-white p-5 text-xl font-semibold shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sm:mx-8 md:mx-16 md:p-10 lg:mx-32 xl:mx-64'>
+    <section className='mx-4 my-10 flex flex-col items-center rounded-3xl border-2 border-primary bg-white p-5 text-xl font-semibold shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sm:mx-8 md:mx-16 md:p-10 lg:mx-32 xl:mx-64'>
       <div className='w-full max-w-[500px]'>
         <div className='flex items-center justify-between gap-5 pb-9 pt-16 '>
           <div
-            className={`transition-opacity duration-500 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'}`}
+            className={`transition-opacity duration-500 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'} mx-auto h-52`}
           >
             <TestimonialCard {...testimonials[currentIndex]} />
           </div>
