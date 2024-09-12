@@ -13,35 +13,38 @@ function AdmissionHero() {
       <div className='hero-background relative'>
         <div className='gradient-overlay absolute inset-0 z-10'></div>
         <div className='relative z-20 flex text-white'>
-          <div className='flex max-w-4xl flex-col p-8 md:p-32'>
+          <div className='flex max-w-7xl flex-col p-20'>
             <motion.h1
-              className='my-10 mb-5 text-5xl font-black md:my-10 md:text-7xl'
+              className='my-10 mb-5 text-5xl font-black md:my-10 md:text-6xl'
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: heroInView ? 1 : 0, y: heroInView ? 0 : -50 }}
               transition={{ duration: 1 }}
               ref={heroRef}
             >
-              The Team
+              Your Path to Admission Success
             </motion.h1>
             <motion.p
-              className='text-left text-lg md:text-2xl'
+              className='max-w-3xl text-left text-lg md:text-2xl'
               initial={{ opacity: 0 }}
               animate={{ opacity: heroInView ? 1 : 0 }}
               transition={{ duration: 1, delay: 0.5 }}
               ref={heroRef}
             >
-              We are a group of students from UIUC dedicated to helping students
-              globally secure the best opportunities. From the initial
-              shortlisting phase to landing your desired job or career path, we
-              offer comprehensive support. Our services include personalized
-              shortlisting, application assistance, MS/PhD interview
-              preparation, VISA interview, networking opportunities, and job
-              search strategies. We connect you with industry professionals,
-              provide tailored career path guidance, and continue offering
-              support as you transition into your new role. Our mission is to
-              unlock your potential and guide you toward a successful and
-              fulfilling career. Let&apos;s make your aspirations a reality
-              together.
+              At Saeternus, we are a dedicated team of UIUC students with a
+              mission to help students across the globe secure the best academic
+              and professional opportunities. From personalized shortlisting of
+              programs to comprehensive application support, MS/PhD interview
+              preparation, and VISA interview guidance, we offer step-by-step
+              assistance tailored to your unique needs. Our approach ensures
+              that you feel confident and prepared as you navigate the
+              competitive admissions process. <br /> <br />
+              In addition to academic consulting, we provide networking
+              opportunities with industry professionals and expert job search
+              strategies to guide you toward a fulfilling career. Whether
+              you&apos;re transitioning to a new role or aiming for your dream
+              job, our team is here to support you every step of the way.
+              Together, we&apos;ll unlock your potential and make your
+              aspirations a reality.
             </motion.p>
             <motion.button
               className='mt-7 w-full rounded-md bg-white p-3 font-bold text-black hover:bg-gray-100 md:w-[200px]'
@@ -53,7 +56,7 @@ function AdmissionHero() {
               transition={{ duration: 0.5, delay: 1 }}
               ref={heroRef}
             >
-              Contact us
+              Get Started
             </motion.button>
           </div>
         </div>

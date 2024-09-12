@@ -8,6 +8,7 @@ import AdmissionHero from '@/components/AdmissionHero';
 import ContactUsSection from '@/components/servicesContactNow';
 import ServicesSection from '@/components/servicesSection';
 import TestimonialSection from '@/components/servicesTestimonial';
+import ContactPage from './_components/Contact';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -41,7 +42,7 @@ function Page() {
         <div className='container mx-auto px-4'>
           <div className='mb-12 text-center'>
             <motion.h2
-              className='text-4xl font-extrabold text-black'
+              className='text-3xl font-extrabold text-black sm:text-4xl'
               initial={{ opacity: 0 }}
               animate={{ opacity: expertiseInView ? 1 : 0 }}
               transition={{ duration: 1 }}
@@ -65,10 +66,10 @@ function Page() {
                 <div className='shadow-3xl mb-4 flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gray-100'>
                   <IconTargetArrow className='h-12 w-12' />
                 </div>
-                <h3 className='mb-2 text-center text-2xl font-bold text-primary'>
+                <h3 className='mb-2 text-center text-xl font-bold text-primary sm:text-2xl'>
                   5 years of expertise
                 </h3>
-                <p className='text-center text-gray-500'>
+                <p className='text-center text-sm text-gray-500 sm:text-base'>
                   Dedicated to student success since 2019
                 </p>
               </div>
@@ -81,10 +82,10 @@ function Page() {
                 <div className='shadow-3xl mb-4 flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gray-100'>
                   <IconUsersGroup stroke={2} className='h-12 w-12' />
                 </div>
-                <h3 className='mb-2 text-center text-2xl font-bold text-primary'>
+                <h3 className='mb-2 text-center text-xl font-bold text-primary sm:text-2xl'>
                   Powered by UIUC experts
                 </h3>
-                <p className='text-center text-gray-500'>
+                <p className='text-center text-sm text-gray-500 sm:text-base'>
                   Leveraging top-tier university knowledge
                 </p>
               </div>
@@ -97,10 +98,10 @@ function Page() {
                 <div className='shadow-3xl mb-4 flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gray-100'>
                   <IconStar stroke={2} className='h-12 w-12' />
                 </div>
-                <h3 className='mb-2 text-center text-2xl font-bold text-primary'>
+                <h3 className='mb-2 text-center text-xl font-bold text-primary sm:text-2xl'>
                   Top Quality
                 </h3>
-                <p className='text-center text-gray-500'>
+                <p className='text-center text-sm text-gray-500 sm:text-base'>
                   We are the top quality team in the industry
                 </p>
               </div>
@@ -110,8 +111,13 @@ function Page() {
       </div>
       <AdmissionFeatures />
       <ServicesSection />
-      <TestimonialSection />
-      <ContactUsSection />
+      <div className='bg-gray-100 p-10'>
+        <h1 className='p-10 text-center text-3xl font-semibold sm:text-4xl'>
+          What <span className='text-primary'>Saeternites</span> say about us...
+        </h1>
+        <TestimonialSection />
+      </div>
+      <ContactPage />
     </div>
   );
 }

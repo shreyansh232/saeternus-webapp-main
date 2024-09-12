@@ -59,7 +59,7 @@
   }
 }
 .hero-background {
-  background-image: url('/images/hero-gradient.jpeg');
+  background-image: url('/images/hero-gradient.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
