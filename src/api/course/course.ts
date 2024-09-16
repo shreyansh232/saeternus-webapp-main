@@ -189,7 +189,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-10',
+    startDate: '2024-09-27',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
