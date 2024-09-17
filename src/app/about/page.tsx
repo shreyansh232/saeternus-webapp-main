@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <div className='relative h-screen w-full'>
         <Image
-          src='/images/class-hero.jpg'
+          src='/images/class-hero.webp'
           alt='Saeternus about us hero image'
           layout='fill'
           objectFit='cover'
