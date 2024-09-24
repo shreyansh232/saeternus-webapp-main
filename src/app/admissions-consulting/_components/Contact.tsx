@@ -9,11 +9,7 @@ import {
   faLinkedin,
   faXTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
   Select,
@@ -36,13 +32,19 @@ const ContactPage: FC = () => {
   const [selectedProgram, setSelectedProgram] = useState<string>('');
 
   function onSubmit(data: FormData) {
-    data.program = selectedProgram;
-    sendEmail(data);
+    const emailData = {
+      name: data.name,
+      email: data.email,
+      number: data.number,
+      program: data.program,
+      route: '/admissions-consulting',
+    };
+    sendEmail(emailData);
   }
 
   return (
     <div>
-      <div className='max-w-8xl mx-auto py-12 md:py-24'>
+      <div id='contact' className='max-w-8xl mx-auto py-12 md:py-24'>
         <div className='grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2'>
           <div className='hidden flex-col gap-10 md:ml-20 md:w-[550px] lg:block xl:ml-72 xl:w-5/6'>
             <div className='mb-20'>
@@ -125,7 +127,11 @@ const ContactPage: FC = () => {
               </p>
               <form
                 onSubmit={handleSubmit((data) => {
-                  onSubmit({ ...data, route: 'admissions-consulting' });
+                  onSubmit({
+                    ...data,
+                    program: selectedProgram,
+                    route: '/admissions-consulting',
+                  });
                 })}
                 className='mt-8 space-y-4'
               >

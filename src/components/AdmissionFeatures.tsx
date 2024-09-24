@@ -10,7 +10,6 @@ const cardVariants = {
 };
 
 const StudyAbroadGuidance: React.FC = () => {
-  // Create references and visibility states for each section
   const { ref: card1Ref, inView: card1InView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -157,13 +156,14 @@ const StudyAbroadGuidance: React.FC = () => {
         </div>
 
         <div className='flex justify-center'>
-          <motion.button
+          <motion.a
             className='mt-6 rounded-md bg-primary px-16 py-3 font-bold text-white transition-colors hover:bg-gray-800'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            href='#contact'
           >
-            Explore More
-          </motion.button>
+            Get Started
+          </motion.a>
         </div>
       </div>
     </section>

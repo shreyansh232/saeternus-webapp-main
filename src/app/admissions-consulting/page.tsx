@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
-import { IconStar, IconTargetArrow, IconUsersGroup } from '@tabler/icons-react';
+import { IconTargetArrow, IconUsersGroup } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AdmissionFeatures from '@/components/AdmissionFeatures';
 import AdmissionHero from '@/components/AdmissionHero';
-import ContactUsSection from '@/components/servicesContactNow';
 import ServicesSection from '@/components/servicesSection';
 import TestimonialSection from '@/components/servicesTestimonial';
 import ContactPage from './_components/Contact';
+import { Crown } from 'lucide-react';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -70,7 +70,7 @@ function Page() {
                   5 years of expertise
                 </h3>
                 <p className='text-center text-sm text-gray-500 sm:text-base'>
-                  Dedicated to student success since 2019
+                  Dedicated to students&apos; success since 2019
                 </p>
               </div>
             </motion.div>
@@ -83,7 +83,7 @@ function Page() {
                   <IconUsersGroup stroke={2} className='h-12 w-12' />
                 </div>
                 <h3 className='mb-2 text-center text-xl font-bold text-primary sm:text-2xl'>
-                  Powered by UIUC experts
+                  Experts from top 5 universities
                 </h3>
                 <p className='text-center text-sm text-gray-500 sm:text-base'>
                   Leveraging top-tier university knowledge
@@ -96,13 +96,13 @@ function Page() {
             >
               <div className='flex flex-col items-center justify-center'>
                 <div className='shadow-3xl mb-4 flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gray-100'>
-                  <IconStar stroke={2} className='h-12 w-12' />
+                  <Crown className='h-12 w-12' />
                 </div>
                 <h3 className='mb-2 text-center text-xl font-bold text-primary sm:text-2xl'>
-                  Top Quality
+                  Personalization and Quality
                 </h3>
                 <p className='text-center text-sm text-gray-500 sm:text-base'>
-                  We are the top quality team in the industry
+                  We craft unique personalized stories to make you stand out
                 </p>
               </div>
             </motion.div>

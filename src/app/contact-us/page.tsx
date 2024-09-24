@@ -28,7 +28,15 @@ const ContactPage: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
-    sendEmail(data);
+    const emailData = {
+      name: data.name,
+      email: data.email,
+      number: data.number,
+      subject: data.subject,
+      message: data.message,
+      route: 'contact-us',
+    };
+    sendEmail(emailData);
   }
 
   return (

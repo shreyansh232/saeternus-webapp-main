@@ -6,19 +6,26 @@ export function sendEmail(data: ContactFormData | AdmissionsFormData) {
 
   const currentPage = window.location.pathname;
 
-  let formDataToSend;
+  let formDataToSend: any = {};
 
   if (currentPage === '/contact-us') {
+    const contactData = data as ContactFormData;
     formDataToSend = {
-      name: (data as ContactFormData).name,
-      email: (data as ContactFormData).email,
-      message: (data as ContactFormData).message,
+      name: contactData.name,
+      email: contactData.email,
+      number: contactData.number,
+      subject: contactData.subject,
+      message: contactData.message,
+      route: '/contact-us',
     };
   } else if (currentPage === '/admissions-consulting') {
+    const admissionsData = data as AdmissionsFormData;
     formDataToSend = {
-      fullName: (data as AdmissionsFormData).name,
-      email: (data as AdmissionsFormData).email,
-      university: (data as AdmissionsFormData).program,
+      name: admissionsData.name,
+      email: admissionsData.email,
+      number: admissionsData.number,
+      program: admissionsData.program,
+      route: '/admissions-consulting',
     };
   }
 

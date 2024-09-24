@@ -113,6 +113,14 @@ function Footer() {
                         Courses
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href='/courses'
+                        className={cn('text-black hover:text-primary')}
+                      >
+                        Career
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div>

@@ -5,6 +5,8 @@ import Mail from 'nodemailer/lib/mailer';
 export async function POST(request: NextRequest) {
   const body = await request.json();
 
+  console.log('Request Body:', body);
+
   const { email, name, number, subject, message, route, program } = body;
 
   const transport = nodemailer.createTransport({
@@ -16,18 +18,18 @@ export async function POST(request: NextRequest) {
   });
 
   const recipient =
-    route === 'admissions-consulting'
+    route === '/admissions-consulting'
       ? 'admissions@saeternus.com'
       : 'hello@saeternus.com';
 
   const emailText =
-    route === 'admissions-consulting'
+    route === '/admissions-consulting'
       ? `Name: ${name}\nProgram: ${program}\nNumber: ${number}\nEmail: ${email}\n`
       : `Name: ${name}\nNumber: ${number}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
 
   const mailOptions: Mail.Options = {
     from: 'noreply@saeternus.com',
-    to: recipient, // Conditional recipient based on route
+    to: recipient,
     subject: `Query from ${name} - ${route === 'admissions-consulting' ? 'Admissions Consulting' : 'General Inquiry'}`,
     cc: email,
     text: emailText,
